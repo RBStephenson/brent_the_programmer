@@ -603,7 +603,7 @@ function AboutPage({ go }) {
             Hey — I'm Brent. Backend engineer by trade, painter by hobby, caregiver every day.
           </h1>
           <p className="lede">
-            I'm 52. By day I work in tech — mostly backend systems and
+            I'm 51. By day I work in tech — mostly backend systems and
             architecture. I've spent years building software and untangling the
             occasional legendary mess. For a long time I figured my hands only
             really knew keyboards. Turns out… they needed paint too.
@@ -615,7 +615,7 @@ function AboutPage({ go }) {
             <button className="btn ghost" onClick={() => go("now")}>What I'm on now</button>
           </div>
         </div>
-        <Placeholder label="about · hands holding a primed mini" sub="bench shot, soft light" />
+        <Placeholder src="assets/brent-portrait-web.jpg" alt="Brent — bearded, in his D&D 'husband, chaotic good' tee, painted minis and guitars behind him" label="about · Brent at the bench" aspect="4/5" style={{ borderRadius: 4 }} />
       </section>
 
       <section className="about-facts">
