@@ -880,8 +880,8 @@ function AdoptPage({ openLightbox }) {
             The mailing list gets a heads-up the day before anything lists publicly.
             A piece is usually adopted within a week — but it's always quieter to subscribers.
           </p>
-          <form onSubmit={(e) => e.preventDefault()} style={{ marginTop: 18, display: "flex", gap: 8, maxWidth: 360 }}>
-            <input type="email" placeholder="you@example.com"
+          <form onSubmit={(e) => { e.preventDefault(); const v = e.target.email.value.trim(); window.location.href = `mailto:brent.stephenson@brenttheprogrammer.com?subject=${encodeURIComponent("Add me to the list")}&body=${encodeURIComponent("Please add me to the heads-up list" + (v ? ": " + v : "") + ".")}`; }} style={{ marginTop: 18, display: "flex", gap: 8, maxWidth: 360 }}>
+            <input type="email" name="email" placeholder="you@example.com"
                    style={{ flex: 1, padding: "10px 12px", border: "1px solid var(--rule)", borderRadius: 4,
                             background: "var(--paper)", color: "inherit", font: "14px var(--f-body)", outline: "none" }} />
             <button className="btn accent">Subscribe</button>
@@ -895,7 +895,7 @@ function AdoptPage({ openLightbox }) {
           </p>
           <div style={{ marginTop: 14, display: "grid", gap: 10 }}>
             {SOCIALS.map((s) => <SocialCard key={s.id} social={s} />)}
-            <SocialCard social={{ id: "mail", label: "Email", handle: "hi@brentprogrammer.dev" }} />
+            <SocialCard social={{ id: "mail", label: "Email", handle: "brent.stephenson@brenttheprogrammer.com", url: "mailto:brent.stephenson@brenttheprogrammer.com" }} />
           </div>
         </div>
       </section>
@@ -919,19 +919,31 @@ function AdoptPage({ openLightbox }) {
             <div className="inq-body">
               {submitted ? (
                 <div className="submitted">
-                  <div className="h">Got it — I'll be in touch.</div>
-                  <div className="b">I reply within a few days. Usually after the kids are in bed.</div>
+                  <div className="h">Your email's ready to send.</div>
+                  <div className="b">I just opened a pre-filled message in your mail app — hit send and it comes straight to me. I reply within a few days, usually after the kids are in bed.</div>
                 </div>
               ) : (
-                <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}>
+                <form onSubmit={(e) => {
+                  e.preventDefault();
+                  const f = e.target;
+                  const subject = `${inquireItem.adopt === "available" ? "Adopting" : "Waitlist"}: ${inquireItem.title}`;
+                  const body =
+                    `Piece: ${inquireItem.title} (${inquireItem.factionLabel} · ${inquireItem.price})\n` +
+                    `Name: ${f.name.value}\n` +
+                    `Email: ${f.email.value}\n` +
+                    `Shipping to: ${f.country.value}\n\n` +
+                    `Notes:\n${f.notes.value}`;
+                  window.location.href = `mailto:brent.stephenson@brenttheprogrammer.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                  setSubmitted(true);
+                }}>
                   <label>Your name</label>
-                  <input type="text" placeholder="how should I address you" />
+                  <input type="text" name="name" placeholder="how should I address you" />
                   <label>Email</label>
-                  <input type="email" placeholder="you@something.com" />
+                  <input type="email" name="email" placeholder="you@something.com" />
                   <label>Shipping to (country)</label>
-                  <input type="text" placeholder="United States, UK, etc." />
+                  <input type="text" name="country" placeholder="United States, UK, etc." />
                   <label>Anything I should know?</label>
-                  <textarea placeholder="Gift? Display vs. play? Specific shipping date?" />
+                  <textarea name="notes" placeholder="Gift? Display vs. play? Specific shipping date?" />
                   <button type="submit" className="btn accent"
                           style={{ width: "100%", justifyContent: "center", padding: 13 }}>
                     {inquireItem.adopt === "available" ? "Send inquiry" : "Add me to the waitlist"}

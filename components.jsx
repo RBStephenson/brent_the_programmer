@@ -107,11 +107,6 @@ function SiteFooter({ go }) {
                 </li>
               );
             })}
-            <li>
-              <a href="#" style={{ display: "inline-flex", alignItems: "center", gap: 10 }}>
-                <Icon name="rss" size={14} /><span>RSS</span>
-              </a>
-            </li>
           </ul>
         </div>
         <div>
@@ -120,9 +115,10 @@ function SiteFooter({ go }) {
             One email a month. Workshop notes, the occasional finished mini,
             zero promotion.
           </p>
-          <form onSubmit={(e) => e.preventDefault()} style={{ display: "flex", gap: 6 }}>
+          <form onSubmit={(e) => { e.preventDefault(); const v = e.target.email.value.trim(); window.location.href = `mailto:brent.stephenson@brenttheprogrammer.com?subject=${encodeURIComponent("Subscribe me")}&body=${encodeURIComponent("Please add me to the monthly email" + (v ? ": " + v : "") + ".")}`; }} style={{ display: "flex", gap: 6 }}>
             <input
               type="email"
+              name="email"
               placeholder="you@example.com"
               style={{
                 flex: 1, padding: "8px 10px", border: "1px solid var(--rule)",
