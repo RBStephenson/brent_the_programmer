@@ -164,6 +164,24 @@ function HomePage({ go, openPost, hero }) {
         </div>
       </section>
 
+      {/* ME/CFS awareness callout — quiet, set slightly apart */}
+      <section className="shell section">
+        <div className="awr-callout">
+          <div>
+            <div className="eyebrow">why this site also exists</div>
+            <h3>My wife and son live with ME/CFS.</h3>
+            <p>
+              It's a serious, disabling illness most people have never heard of —
+              and a big part of why this site moves slowly and gently. If you have
+              a minute, I'd love for you to understand it a little better.
+            </p>
+          </div>
+          <button className="btn accent cta" onClick={() => go("awareness")}>
+            Learn about ME/CFS <span className="arr"><Icon name="arrow" size={14} /></span>
+          </button>
+        </div>
+      </section>
+
       {/* Socials */}
       <section className="shell section">
         <div className="section-h">
@@ -635,7 +653,11 @@ function AboutPage({ go }) {
             lot of patience. My wife and my son both live with ME/CFS, a
             disabling chronic illness that affects every part of daily life.
             Caregiving is part of our rhythm here. Some days are steady. Some
-            days change fast. Plans move, energy shifts, and we adapt.
+            days change fast. Plans move, energy shifts, and we adapt.{" "}
+            <a onClick={() => go("awareness")}
+               style={{ color: "var(--accent)", cursor: "pointer", borderBottom: "1px solid currentColor" }}>
+              More about ME/CFS, and why it matters here →
+            </a>
           </p>
           <p>
             In the middle of all that, creativity became something important

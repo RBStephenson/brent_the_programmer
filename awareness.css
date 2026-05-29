@@ -1,0 +1,215 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   brent_the_programmer — ME/CFS awareness page
+   Uses the same tokens (--paper, --ink, --accent, fonts) as styles.css so it
+   inherits theme + accent + type pairing automatically. Quiet, honest, set
+   just slightly apart from the hobby content.
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* ── Hero ─────────────────────────────────────────────────────────────── */
+.awr-hero {
+  padding: 56px 0 36px;
+  max-width: 920px;
+  border-bottom: 1px solid var(--rule);
+}
+.awr-hero .eyebrow {
+  font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--accent);
+  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
+}
+.awr-hero .eyebrow::before {
+  content: ""; width: 22px; height: 1px; background: var(--accent);
+}
+.awr-hero h1 {
+  font-family: var(--f-display); font-size: clamp(42px, 5.6vw, 78px);
+  line-height: 1.02; letter-spacing: -.02em; max-width: 16ch;
+}
+.awr-hero h1 em { font-style: italic; color: var(--accent); }
+.awr-hero .lede {
+  font-family: var(--f-display); font-size: 22px; line-height: 1.5;
+  color: var(--ink-2); max-width: 34em; margin-top: 22px;
+}
+.awr-hero .lede + .lede { margin-top: 14px; }
+
+/* ── Generic section rhythm ───────────────────────────────────────────── */
+.awr-section { padding: 52px 0; border-bottom: 1px solid var(--rule); }
+.awr-section:last-of-type { border-bottom: 0; }
+.awr-kicker {
+  font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--ink-3); margin-bottom: 14px;
+}
+.awr-section h2 {
+  font-family: var(--f-display); font-size: clamp(30px, 3.4vw, 46px);
+  line-height: 1.04; letter-spacing: -.015em; max-width: 18ch;
+}
+
+/* Two-column copy block (heading left, prose right) */
+.awr-grid {
+  display: grid; grid-template-columns: 1fr 1.5fr; gap: 56px;
+  align-items: start;
+}
+.awr-prose { max-width: 40em; }
+.awr-prose p {
+  font-size: 16.5px; line-height: 1.7; color: var(--ink-2); margin: 0 0 1.1em;
+}
+.awr-prose p:last-child { margin-bottom: 0; }
+.awr-prose strong { color: var(--ink); font-weight: 600; }
+.awr-prose em { font-style: italic; color: var(--ink); }
+
+/* ── PEM hallmark callout ─────────────────────────────────────────────── */
+.awr-pem {
+  border: 1px solid color-mix(in oklab, var(--accent) 34%, var(--rule));
+  background: color-mix(in oklab, var(--accent) 7%, var(--paper));
+  border-radius: var(--radius);
+  padding: clamp(28px, 4vw, 48px);
+}
+.awr-pem .tag {
+  font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--accent);
+  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 16px;
+}
+.awr-pem .tag .dot {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
+}
+.awr-pem h3 {
+  font-family: var(--f-display); font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.05; letter-spacing: -.015em; max-width: 20ch;
+}
+.awr-pem h3 .abbr { color: var(--accent); font-style: italic; }
+.awr-pem p {
+  font-size: 17px; line-height: 1.7; color: var(--ink-2);
+  margin: 18px 0 0; max-width: 46em;
+}
+.awr-pem p strong { color: var(--ink); font-weight: 600; }
+
+/* ── Symptom grid ─────────────────────────────────────────────────────── */
+.awr-symptoms {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gutter);
+  margin-top: 28px;
+}
+.awr-symptom {
+  border-top: 1px solid var(--ink);
+  padding-top: 16px;
+}
+.awr-symptom .ix {
+  font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.awr-symptom h4 {
+  font-family: var(--f-display); font-size: 23px; line-height: 1.12;
+  margin: 8px 0 8px; font-weight: 400;
+}
+.awr-symptom p { font-size: 14px; line-height: 1.6; color: var(--ink-2); }
+
+/* ── Stats strip ──────────────────────────────────────────────────────── */
+.awr-stats {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gutter);
+}
+.awr-stat .num {
+  font-family: var(--f-display); font-size: clamp(44px, 5vw, 64px);
+  line-height: 1; color: var(--accent); letter-spacing: -.01em;
+}
+.awr-stat .lbl {
+  font-size: 14.5px; line-height: 1.5; color: var(--ink-2);
+  margin-top: 12px; max-width: 22ch;
+}
+.awr-stat .src {
+  font-family: var(--f-mono); font-size: 10px; letter-spacing: .04em;
+  color: var(--ink-3); margin-top: 10px; text-transform: uppercase;
+}
+
+/* ── Caregiver note ───────────────────────────────────────────────────── */
+.awr-note {
+  display: grid; grid-template-columns: 1fr 1.5fr; gap: 56px; align-items: start;
+}
+.awr-note .label {
+  font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.awr-note .body p {
+  font-family: var(--f-display); font-size: 21px; line-height: 1.55;
+  color: var(--ink-2); margin: 0 0 .8em; max-width: 30em;
+}
+.awr-note .body p:last-child { margin-bottom: 0; }
+.awr-note .body strong { color: var(--ink); font-weight: 500; }
+
+/* ── Resources ────────────────────────────────────────────────────────── */
+.awr-resources {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gutter);
+  margin-top: 28px;
+}
+.awr-resource {
+  display: flex; flex-direction: column; gap: 8px;
+  padding: 22px; border: 1px solid var(--rule); border-radius: var(--radius);
+  background: var(--paper); cursor: pointer;
+  transition: transform .15s, background-color .15s, border-color .15s;
+}
+.awr-resource:hover {
+  transform: translateY(-2px); background: var(--paper-2);
+  border-color: var(--ink-3);
+}
+.awr-resource .top {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+}
+.awr-resource .name {
+  font-family: var(--f-display); font-size: 24px; line-height: 1.1;
+}
+.awr-resource .host {
+  font-family: var(--f-mono); font-size: 11px; color: var(--accent);
+  letter-spacing: .02em; white-space: nowrap;
+}
+.awr-resource .desc { font-size: 14px; line-height: 1.55; color: var(--ink-2); }
+.awr-resource .go {
+  font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--ink-3);
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 4px;
+}
+.awr-resource:hover .go { color: var(--ink); }
+
+/* ── Closing line ─────────────────────────────────────────────────────── */
+.awr-close {
+  padding: 48px 0 8px;
+  font-family: var(--f-display); font-style: italic;
+  font-size: clamp(22px, 2.6vw, 32px); line-height: 1.3; color: var(--ink-2);
+  max-width: 24ch;
+}
+.awr-close .accent { color: var(--accent); font-style: normal; }
+.awr-daynote {
+  font-family: var(--f-mono); font-size: 11px; letter-spacing: .04em;
+  color: var(--ink-3); margin-top: 24px; text-transform: uppercase;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.awr-daynote .ribbon { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+
+/* ── Home callout band ────────────────────────────────────────────────── */
+.awr-callout {
+  border: 1px solid var(--rule); border-radius: var(--radius);
+  background: var(--paper-2);
+  padding: clamp(28px, 4vw, 44px);
+  display: grid; grid-template-columns: 1.4fr auto; gap: 40px; align-items: center;
+}
+.awr-callout .eyebrow {
+  font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 14px;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.awr-callout .eyebrow::before { content: ""; width: 18px; height: 1px; background: var(--accent); }
+.awr-callout h3 {
+  font-family: var(--f-display); font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.1; letter-spacing: -.01em; max-width: 18ch;
+}
+.awr-callout p {
+  font-size: 15.5px; line-height: 1.6; color: var(--ink-2);
+  margin-top: 14px; max-width: 52ch;
+}
+.awr-callout .cta { white-space: nowrap; }
+
+/* ── Responsive ───────────────────────────────────────────────────────── */
+@media (max-width: 940px) {
+  .awr-grid, .awr-note { grid-template-columns: 1fr; gap: 24px; }
+  .awr-symptoms, .awr-stats { grid-template-columns: 1fr 1fr; }
+  .awr-resources { grid-template-columns: 1fr; }
+  .awr-callout { grid-template-columns: 1fr; gap: 22px; }
+}
+@media (max-width: 560px) {
+  .awr-symptoms, .awr-stats { grid-template-columns: 1fr; }
+}

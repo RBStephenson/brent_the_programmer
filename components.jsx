@@ -42,6 +42,7 @@ const NAV_ITEMS = [
   { id: "blog",     label: "blog" },
   { id: "now",      label: "now" },
   { id: "about",    label: "about" },
+  { id: "awareness", label: "me/cfs" },
 ];
 
 function SiteHeader({ route, go, theme, onToggleTheme }) {
@@ -88,6 +89,7 @@ function SiteFooter({ go }) {
             <li><a onClick={() => go("blog")}>Blog</a></li>
             <li><a onClick={() => go("now")}>Now</a></li>
             <li><a onClick={() => go("about")}>About</a></li>
+            <li><a onClick={() => go("awareness")}>ME/CFS awareness</a></li>
           </ul>
         </div>
         <div>

@@ -43,6 +43,7 @@ function App() {
         {route === "post"    && currentPost && <PostPage post={currentPost} go={go} openPost={openPost} />}
         {route === "about"   && <AboutPage   go={go} />}
         {route === "now"     && <NowPage />}
+        {route === "awareness" && <AwarenessPage go={go} />}
       </div>
 
       <SiteFooter go={go} />
