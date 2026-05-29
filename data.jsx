@@ -330,7 +330,7 @@ const NOW_PROJECTS = [
 const SOCIALS = [
   { id: "youtube",   label: "YouTube",   handle: "@brent_the_programmer", desc: "Long-form paint-alongs and quiet workbench sessions.", url: "https://www.youtube.com/channel/UC0nUK7GE2y4qYskGsXiTh9g" },
   { id: "instagram", label: "Instagram", handle: "@brent_the_programmer", desc: "Final shots and the occasional WIP.", url: "https://instagram.com/brent_the_programmer" },
-  { id: "facebook",  label: "Facebook",  handle: "Brenttheprogrammer",    desc: "Where my family looks at the figures.", url: "https://facebook.com/Brenttheprogrammer" },
+  { id: "facebook",  label: "Facebook",  handle: "Brenttheprogrammer",    desc: "Where my family looks at the figures.", url: "https://www.facebook.com/profile.php?id=61590094512084" },
 ];
 
 Object.assign(window, { FACTIONS, GALLERY, POSTS, NOW_PROJECTS, SOCIALS });
