@@ -588,6 +588,31 @@ function PostPage({ post, go, openPost }) {
 function AboutPage({ go }) {
   const pileCount = GALLERY.filter((g) => g.status === "pile").length;
   const wipCount  = GALLERY.filter((g) => g.status === "wip").length;
+
+  // Shelf thumbnails open the same lightbox the gallery uses.
+  const shelfItems = GALLERY.filter((g) => g.status === "pile").slice(0, 6);
+  const [openId, setOpenId] = React.useState(null);
+  const closeLb = () => setOpenId(null);
+  const navLb = (dir) => {
+    const i = shelfItems.findIndex((g) => g.id === openId);
+    if (i < 0) return;
+    const next = (i + dir + shelfItems.length) % shelfItems.length;
+    setOpenId(shelfItems[next].id);
+  };
+  React.useEffect(() => {
+    if (!openId) return;
+    document.body.classList.add("lb-open");
+    const onKey = (e) => {
+      if (e.key === "Escape") closeLb();
+      if (e.key === "ArrowLeft") navLb(-1);
+      if (e.key === "ArrowRight") navLb(1);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.classList.remove("lb-open");
+    };
+  }, [openId]);
   const facts = [
     { num: wipCount,        lbl: "On the bench",   sub: "Diana the Acrobat." },
     { num: pileCount,       lbl: "In the pile",    sub: "Printed, awaiting paint." },
@@ -689,11 +714,24 @@ function AboutPage({ go }) {
       <section style={{ padding: "32px 0 56px", borderTop: "1px solid var(--rule)" }}>
         <div className="about-shelf-label">A few things sitting in the pile</div>
         <div className="about-shelf">
-          {GALLERY.filter((g) => g.status === "pile").slice(0, 6).map((g) => (
-            <Placeholder key={g.id} label={g.title.toLowerCase()} src={g.image} alt={g.title} />
+          {shelfItems.map((g) => (
+            <button key={g.id} type="button" className="about-shelf-item"
+                    onClick={() => setOpenId(g.id)}
+                    aria-label={`View ${g.title}`}>
+              <Placeholder label={g.title.toLowerCase()} src={g.image} alt={g.title} />
+            </button>
           ))}
         </div>
       </section>
+
+      {openId && (
+        <Lightbox
+          item={GALLERY.find((g) => g.id === openId)}
+          onClose={closeLb}
+          onPrev={() => navLb(-1)}
+          onNext={() => navLb(1)}
+        />
+      )}
     </main>
   );
 }

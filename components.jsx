@@ -12,6 +12,7 @@ function Icon({ name, size = 14 }) {
     case "youtube": return <svg viewBox="0 0 24 24" {...s}><rect x="2.5" y="6" width="19" height="12" rx="3"/><path d="m10 9.5 5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg>;
     case "instagram": return <svg viewBox="0 0 24 24" {...s}><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>;
     case "facebook": return <svg viewBox="0 0 24 24" {...s}><path d="M14 8h2.5V5H14c-2 0-3 1-3 3v2H9v3h2v8h3v-8h2.5l.5-3H14V8.5c0-.3.2-.5.5-.5Z"/></svg>;
+    case "patreon": return <svg viewBox="0 0 24 24" {...s}><circle cx="15" cy="9.2" r="5.2"/><rect x="3.5" y="3.6" width="2.6" height="16.8" rx="1" fill="currentColor" stroke="none"/></svg>;
     case "arrow":  return <svg viewBox="0 0 24 24" {...s}><path d="M5 12h14M13 6l6 6-6 6"/></svg>;
     case "close":  return <svg viewBox="0 0 24 24" {...s}><path d="m6 6 12 12M18 6 6 18"/></svg>;
     case "chevL":  return <svg viewBox="0 0 24 24" {...s}><path d="m15 6-6 6 6 6"/></svg>;

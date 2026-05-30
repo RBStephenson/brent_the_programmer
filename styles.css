@@ -811,6 +811,16 @@ html[data-tape="off"] .hero-card .tape { display: none; }
   display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px;
 }
 .about-shelf .ph { aspect-ratio: 1; border-radius: 4px; }
+/* Shelf thumbnails are buttons that open the lightbox. */
+.about-shelf-item {
+  display: block; padding: 0; border: 0; background: none; cursor: pointer;
+  border-radius: 4px; outline: none;
+  transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+}
+.about-shelf-item .ph { width: 100%; pointer-events: none; }
+.about-shelf-item:hover { transform: translateY(-3px); filter: brightness(1.06); }
+.about-shelf-item:hover .ph { box-shadow: 0 8px 22px rgba(0,0,0,.32); }
+.about-shelf-item:focus-visible { box-shadow: 0 0 0 2px var(--paper), 0 0 0 4px var(--accent); }
 .about-shelf-label {
   font-family: var(--f-mono); font-size: 11px; color: var(--ink-3); letter-spacing: .12em; text-transform: uppercase;
   margin-bottom: 12px;
