@@ -13,6 +13,8 @@ function Icon({ name, size = 14 }) {
     case "instagram": return <svg viewBox="0 0 24 24" {...s}><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>;
     case "facebook": return <svg viewBox="0 0 24 24" {...s}><path d="M14 8h2.5V5H14c-2 0-3 1-3 3v2H9v3h2v8h3v-8h2.5l.5-3H14V8.5c0-.3.2-.5.5-.5Z"/></svg>;
     case "patreon": return <svg viewBox="0 0 24 24" {...s}><circle cx="15" cy="9.2" r="5.2"/><rect x="3.5" y="3.6" width="2.6" height="16.8" rx="1" fill="currentColor" stroke="none"/></svg>;
+    case "coffee": return <svg viewBox="0 0 24 24" {...s}><path d="M4 8h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z"/><path d="M17 9h2.2a2.3 2.3 0 0 1 0 4.6H17"/><path d="M7 3.5c-.5.7-.5 1.3 0 2M11 3.5c-.5.7-.5 1.3 0 2"/></svg>;
+    case "discord": return <svg viewBox="0 0 24 24" {...s}><path d="M8 7.5c2.6-1 5.4-1 8 0M8 16.5c2.6 1 5.4 1 8 0"/><path d="M8 7.5C6.3 8 5.2 9.8 4.8 12c-.4 2.2-.4 3.6 0 5 1 .8 2 1.3 3 1.5l.8-1.7M16 7.5c1.7.5 2.8 2.3 3.2 4.5.4 2.2.4 3.6 0 5-1 .8-2 1.3-3 1.5l-.8-1.7"/><circle cx="9.5" cy="12.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="12.5" r="1.1" fill="currentColor" stroke="none"/></svg>;
     case "arrow":  return <svg viewBox="0 0 24 24" {...s}><path d="M5 12h14M13 6l6 6-6 6"/></svg>;
     case "close":  return <svg viewBox="0 0 24 24" {...s}><path d="m6 6 12 12M18 6 6 18"/></svg>;
     case "chevL":  return <svg viewBox="0 0 24 24" {...s}><path d="m15 6-6 6 6 6"/></svg>;

@@ -332,6 +332,8 @@ const SOCIALS = [
   { id: "instagram", label: "Instagram", handle: "@brent_the_programmer", desc: "Final shots and the occasional WIP.", url: "https://instagram.com/brent_the_programmer" },
   { id: "facebook",  label: "Facebook",  handle: "Brenttheprogrammer",    desc: "Where my family looks at the figures.", url: "https://facebook.com/Brenttheprogrammer" },
   { id: "patreon",   label: "Patreon",   handle: "Brent Stephenson",      desc: "Support the bench — early looks and works in progress.", url: "https://www.patreon.com/c/BrentStephenson" },
+  { id: "coffee",    label: "Buy Me a Coffee", handle: "brent_the_programmer", desc: "A one-off thank-you, if a piece or a post helped your day.", url: "https://buymeacoffee.com/brent_the_programmer" },
+  { id: "discord",   label: "Discord",    handle: "the bench",             desc: "A quiet little server — paint talk, WIPs, and good company.", url: "https://discord.gg/u7K5Zuvc" },
 ];
 
 Object.assign(window, { FACTIONS, GALLERY, POSTS, NOW_PROJECTS, SOCIALS });
