@@ -149,7 +149,7 @@ function HomePage({ go, openPost, hero }) {
             </div>
             <article className="latest-post" onClick={() => openPost(featuredPost.id)}
                      style={{ cursor: "pointer" }}>
-              <Placeholder label={featuredPost.placeholder} />
+              <Placeholder label={featuredPost.placeholder} src={featuredPost.image} alt={featuredPost.title} />
               <div className="cat">{featuredPost.cat}</div>
               <h3>{featuredPost.title}</h3>
               <p className="excerpt">{featuredPost.excerpt}</p>
@@ -435,7 +435,7 @@ function BlogPage({ openPost }) {
             <p className="excerpt">{featured.excerpt}</p>
             <div className="row-meta">{featured.cat} · {featured.date} · {featured.read} read</div>
           </div>
-          <Placeholder label={featured.placeholder} aspect="4/3" style={{ borderRadius: 4 }} />
+          <Placeholder label={featured.placeholder} src={featured.image} aspect="4/3" style={{ borderRadius: 4 }} />
         </article>
       )}
 
@@ -449,7 +449,7 @@ function BlogPage({ openPost }) {
               <p className="excerpt">{p.excerpt}</p>
               <div className="row-meta">{p.cat} · {p.date} · {p.read} read</div>
             </div>
-            <Placeholder label={p.placeholder} aspect="4/3" style={{ borderRadius: 4 }} />
+            <Placeholder label={p.placeholder} src={p.image} aspect="4/3" style={{ borderRadius: 4 }} />
           </article>
         ))}
       </div>
@@ -508,7 +508,7 @@ function PostPage({ post, go, openPost }) {
           </div>
         </header>
 
-        <Placeholder label={post.placeholder} className="post-feature" />
+        <Placeholder label={post.placeholder} src={post.image} className="post-feature" />
 
         <div className="post-body">
           <aside className="post-aside">

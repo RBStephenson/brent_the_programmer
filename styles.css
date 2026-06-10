@@ -383,6 +383,8 @@ html[data-tape="off"] .hero-card .tape { display: none; }
   background: var(--paper-2);
 }
 .latest-post .ph { aspect-ratio: 16/9; border-radius: 4px; }
+/* Match the post hero crop so a tall portrait keeps its head in frame. */
+.latest-post .ph img { object-position: center 12%; }
 .latest-post .cat {
   font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em;
   color: var(--accent); text-transform: uppercase;
@@ -747,6 +749,8 @@ html[data-tape="off"] .hero-card .tape { display: none; }
 .post-hero .meta { font-family: var(--f-mono); font-size: 12px; color: var(--ink-3); margin-top: 22px; display: flex; gap: 18px; flex-wrap: wrap; }
 
 .post-feature { aspect-ratio: 16/9; border-radius: var(--radius); margin: 40px 0; }
+/* Diana's portrait is tall — pull the crop up so her head stays in frame. */
+.post-feature img { object-position: center 12%; }
 
 .post-body { display: grid; grid-template-columns: 220px 1fr; gap: 56px; padding: 24px 0 56px; }
 .post-aside { position: sticky; top: 100px; align-self: start; }
