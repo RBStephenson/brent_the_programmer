@@ -1,5 +1,5 @@
 // Real content for brent_the_programmer.
-// Brent just started painting — 1 WIP (Diana) and a pile of printed 1:6 figures
+// Brent just started painting — 2 WIP (Diana, Hank) and a pile of printed 1:6 figures
 // awaiting paint. Status values: "wip" (actively painting) | "pile" (printed).
 // Globals: GALLERY, POSTS, NOW_PROJECTS, SOCIALS, FACTIONS.
 
@@ -45,13 +45,13 @@ const GALLERY = [
     title: "Hank the Ranger",
     faction: "dnd",
     factionLabel: "D&D Cartoon · Toon Studios",
-    status: "pile",
-    stage: "assembled, based & primed",
+    status: "wip",
+    stage: "on the bust & hood · arms and bow to go",
     designer: "Toon Studios",
-    image: "assets/gallery/hank-web.jpg",
-    notes: "Cartoon set member. Cleaned, pinned to his rocky base, and primed — ready for paint. The bow is going to want a steadier hand than I currently have.",
+    image: "assets/gallery/hank-wip-web.jpg",
+    notes: "My first real go at a 1:6 figure — no test piece this time, painting straight onto the model. Working in pieces on cork: the bust and green hood are coming together, with the arms, gauntlet, and bow still to paint. Far from done, but I'm happy with where the face and layered greens are landing.",
     size: "tall",
-    placeholder: "pile · hank ranger, primed",
+    placeholder: "wip · hank ranger, bust in progress",
   },
   {
     id: "eric",
@@ -488,8 +488,19 @@ const POSTS = [
   },
 ];
 
-// "On the desk" — only Diana for now.
+// "On the desk" — Diana and Hank.
 const NOW_PROJECTS = [
+  {
+    id: "hank",
+    title: "Hank the Ranger",
+    cat: "1:6 figure · Toon Studios",
+    desc: "My first real go at a 1:6 figure, painting straight onto the model with no test piece. Working in pieces on cork — the bust and hood are coming together, with arms, gauntlet, and bow still to go.",
+    pct: 35,
+    current: 3,
+    pile: ["arms & gauntlet", "then the bow", "then base"],
+    placeholder: "now · hank wip",
+    image: "assets/gallery/hank-wip-web.jpg",
+  },
   {
     id: "diana",
     title: "Diana the Acrobat",
