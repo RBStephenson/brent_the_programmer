@@ -329,6 +329,7 @@ const POSTS = [
       "~~signoff",
     ],
     tags: ["caregiving", "me/cfs", "guilt"],
+    image: "assets/posts/weight-of-a-good-day-web.jpg",
     placeholder: "essay \u00b7 the local game store, Father's Day",
   },
   {
