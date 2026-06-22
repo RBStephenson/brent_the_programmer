@@ -18,14 +18,37 @@ function App() {
 
   const go = (r) => {
     setRoute(r);
+    // Leaving a post clears the ?post= param so the URL reflects where we are.
+    if (r !== "post") {
+      try { window.history.pushState({}, "", window.location.pathname); } catch (e) {}
+    }
     // Scroll to top on navigation but keep current scroll position if same route
     if (r !== route) window.scrollTo({ top: 0, behavior: "instant" });
   };
   const openPost = (id) => {
     setPostId(id);
     setRoute("post");
+    // Reflect the open post in the URL so it can be shared / picked up by RSS links.
+    try { window.history.pushState({}, "", "?post=" + encodeURIComponent(id)); } catch (e) {}
     window.scrollTo({ top: 0, behavior: "instant" });
   };
+
+  // Deep-linking: open ?post=<id> on load, and keep the back/forward buttons working.
+  React.useEffect(() => {
+    const sync = () => {
+      const pid = new URLSearchParams(window.location.search).get("post");
+      if (pid && POSTS.find((p) => p.id === pid)) {
+        setPostId(pid);
+        setRoute("post");
+      } else {
+        setPostId(null);
+        setRoute((r) => (r === "post" ? "home" : r));
+      }
+    };
+    sync();
+    window.addEventListener("popstate", sync);
+    return () => window.removeEventListener("popstate", sync);
+  }, []);
 
   const toggleTheme = () => setTweak("theme", t.theme === "studio" ? "workshop" : "studio");
 
