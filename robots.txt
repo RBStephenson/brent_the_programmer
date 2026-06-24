@@ -1,0 +1,5 @@
+# brenttheprogrammer.com
+User-agent: *
+Allow: /
+
+Sitemap: https://brenttheprogrammer.com/sitemap.xml

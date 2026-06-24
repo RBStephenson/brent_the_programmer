@@ -40,8 +40,8 @@ function HomePage({ go, openPost, hero }) {
             self-care, and trusting the process… both at the desk and in life.
           </p>
           <div className="hero-meta">
-            <span><span className="k">currently</span> diana the acrobat</span>
-            <span><span className="k">on the desk</span> 1 model</span>
+            <span><span className="k">currently</span> {wips.map((w) => w.title.split(" ")[0]).join(" & ").toLowerCase()}</span>
+            <span><span className="k">on the desk</span> {wips.length} model{wips.length === 1 ? "" : "s"}</span>
             <span><span className="k">in the pile</span> {pileCount} prints</span>
             <span><span className="k">scale</span> 1:6 only</span>
           </div>
@@ -243,8 +243,8 @@ function GalleryPage() {
           One on the bench. The rest, waiting.
         </h1>
         <p className="muted" style={{ marginTop: 18, maxWidth: "48ch", fontSize: 16, lineHeight: 1.55 }}>
-          Everything here is a 1:6 scale resin print. Right now there's one WIP
-          (Diana) and a pile of unstarted figures I want to paint. Click any
+          Everything here is a 1:6 scale resin print. Right now there are two WIPs
+          (Hank and Diana) and a pile of unstarted figures I want to paint. Click any
           piece to see notes from the bench. Filter by subject or status to
           narrow down.
         </p>
@@ -614,7 +614,7 @@ function AboutPage({ go }) {
     };
   }, [openId]);
   const facts = [
-    { num: wipCount,        lbl: "On the bench",   sub: "Diana the Acrobat." },
+    { num: wipCount,        lbl: "On the bench",   sub: GALLERY.filter((g) => g.status === "wip").map((w) => w.title.split(" ")[0]).join(" & ") + "." },
     { num: pileCount,       lbl: "In the pile",    sub: "Printed, awaiting paint." },
     { num: "0",             lbl: "Finished",       sub: "Soon. Hopefully." },
     { num: "1:6",           lbl: "Scale of choice", sub: "Big enough to see what I'm doing." },
@@ -748,8 +748,8 @@ function NowPage() {
           <h1 style={{ marginTop: 12 }}>What I'm working on, right now.</h1>
           <p className="lede">
             A snapshot of the bench this week — a
-            <span className="mono"> /now</span> page. Right now there's
-            one model on the desk — everything else is in the pile.
+            <span className="mono"> /now</span> page. Right now there are
+            two models on the desk — everything else is in the pile.
           </p>
         </div>
         <div>

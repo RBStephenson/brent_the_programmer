@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://brenttheprogrammer.com/</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://brenttheprogrammer.com/?post=print-failures-and-laundry</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://brenttheprogrammer.com/assets/posts/print-failures-and-laundry-web.jpg</image:loc><image:title>Print Failures, Laundry, and the Stories We Tell Ourselves</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://brenttheprogrammer.com/?post=weight-of-a-good-day</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://brenttheprogrammer.com/assets/posts/weight-of-a-good-day-web.jpg</image:loc><image:title>The Weight of a Good Day</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://brenttheprogrammer.com/?post=was-it-worth-it</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://brenttheprogrammer.com/assets/brent-portrait-web.jpg</image:loc><image:title>Was It Worth It?</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://brenttheprogrammer.com/?post=diana-and-the-gold</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://brenttheprogrammer.com/assets/gallery/diana-web.jpg</image:loc><image:title>Diana, and the Trouble with Gold</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://brenttheprogrammer.com/?post=its-not-personal-its-pem</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://brenttheprogrammer.com/assets/brent-portrait-web.jpg</image:loc><image:title>It's Not Personal. It's PEM.</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://brenttheprogrammer.com/?post=still-getting-set-up</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://brenttheprogrammer.com/assets/brent-portrait-web.jpg</image:loc><image:title>Still Getting Set Up</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://brenttheprogrammer.com/?post=burnout</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://brenttheprogrammer.com/assets/brent-portrait-web.jpg</image:loc><image:title>When Burnout Starts Burning Everything Down</image:title></image:image>
+  </url>
+</urlset>

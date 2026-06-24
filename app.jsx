@@ -18,10 +18,13 @@ function App() {
 
   const go = (r) => {
     setRoute(r);
-    // Leaving a post clears the ?post= param so the URL reflects where we are.
-    if (r !== "post") {
-      try { window.history.pushState({}, "", window.location.pathname); } catch (e) {}
-    }
+    setPostId(null);
+    // Reflect the section in the URL so every page is a real, shareable link.
+    // Home stays at the clean root; other sections get ?route=<name>.
+    try {
+      const url = r === "home" ? window.location.pathname : "?route=" + r;
+      window.history.pushState({}, "", url);
+    } catch (e) {}
     // Scroll to top on navigation but keep current scroll position if same route
     if (r !== route) window.scrollTo({ top: 0, behavior: "instant" });
   };
@@ -33,17 +36,21 @@ function App() {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
 
-  // Deep-linking: open ?post=<id> on load, and keep the back/forward buttons working.
+  // Deep-linking: open ?post=<id> or ?route=<name> on load, and keep the
+  // back/forward buttons working.
   React.useEffect(() => {
+    const VALID = ["home", "gallery", "studio", "blog", "about", "now", "awareness"];
     const sync = () => {
-      const pid = new URLSearchParams(window.location.search).get("post");
+      const params = new URLSearchParams(window.location.search);
+      const pid = params.get("post");
       if (pid && POSTS.find((p) => p.id === pid)) {
         setPostId(pid);
         setRoute("post");
-      } else {
-        setPostId(null);
-        setRoute((r) => (r === "post" ? "home" : r));
+        return;
       }
+      setPostId(null);
+      const r = params.get("route");
+      setRoute(VALID.includes(r) ? r : "home");
     };
     sync();
     window.addEventListener("popstate", sync);
@@ -53,6 +60,68 @@ function App() {
   const toggleTheme = () => setTweak("theme", t.theme === "studio" ? "workshop" : "studio");
 
   const currentPost = postId ? POSTS.find((p) => p.id === postId) : null;
+
+  // Keep the document title and social/canonical meta in step with the current
+  // view. Crawlers that render JS (and people sharing links that get re-fetched
+  // with JS) then see per-page metadata instead of one site-wide set.
+  React.useEffect(() => {
+    const SITE = "https://brenttheprogrammer.com";
+    const portrait = SITE + "/assets/brent-portrait-web.jpg";
+    const ROUTE_META = {
+      home:      { t: "brent_the_programmer \u2014 hobby, self-care, miniatures",
+                   d: "Brent \u2014 backend engineer, miniature painter, and full-time caregiver. Painting minis one thin layer at a time, self-care, and raising awareness of ME/CFS." },
+      gallery:   { t: "Gallery \u2014 brent_the_programmer",
+                   d: "The painted miniatures \u2014 D&D cartoon heroes, comic and anime characters, and sci-fi figures, painted one thin layer at a time." },
+      studio:    { t: "The Studio \u2014 brent_the_programmer",
+                   d: "Inside the studio \u2014 works in progress, tools, and process notes from the workbench." },
+      blog:      { t: "Journal \u2014 brent_the_programmer",
+                   d: "Essays on caregiving, self-care, and miniature painting \u2014 quiet notes from the bench." },
+      about:     { t: "About \u2014 brent_the_programmer",
+                   d: "About Brent \u2014 backend engineer, miniature painter, and full-time caregiver." },
+      now:       { t: "Now \u2014 brent_the_programmer",
+                   d: "What's on the desk right now \u2014 the current works in progress." },
+      awareness: { t: "ME/CFS Awareness \u2014 brent_the_programmer",
+                   d: "What myalgic encephalomyelitis (ME/CFS) is and why it matters \u2014 the disabling illness my wife and son live with." },
+    };
+    let meta;
+    if (route === "post" && currentPost) {
+      meta = {
+        t: currentPost.title + " \u2014 brent_the_programmer",
+        d: currentPost.excerpt || ROUTE_META.blog.d,
+        img: currentPost.image ? SITE + "/" + currentPost.image : portrait,
+        url: SITE + "/?post=" + currentPost.id,
+      };
+    } else {
+      const m = ROUTE_META[route] || ROUTE_META.home;
+      meta = { t: m.t, d: m.d, img: portrait,
+               url: route === "home" ? SITE + "/" : SITE + "/?route=" + route };
+    }
+    const upsert = (sel, make) => {
+      let el = document.head.querySelector(sel);
+      if (!el) { el = make(); document.head.appendChild(el); }
+      return el;
+    };
+    const setMeta = (attr, key, val) => {
+      const el = upsert("meta[" + attr + "='" + key + "']", () => {
+        const m = document.createElement("meta"); m.setAttribute(attr, key); return m;
+      });
+      el.setAttribute("content", val || "");
+    };
+    document.title = meta.t;
+    setMeta("name", "description", meta.d);
+    setMeta("property", "og:title", meta.t);
+    setMeta("property", "og:description", meta.d);
+    setMeta("property", "og:url", meta.url);
+    setMeta("property", "og:image", meta.img);
+    setMeta("property", "og:type", route === "post" ? "article" : "website");
+    setMeta("name", "twitter:title", meta.t);
+    setMeta("name", "twitter:description", meta.d);
+    setMeta("name", "twitter:image", meta.img);
+    const link = upsert("link[rel='canonical']", () => {
+      const l = document.createElement("link"); l.setAttribute("rel", "canonical"); return l;
+    });
+    link.setAttribute("href", meta.url);
+  }, [route, postId]);
 
   return (
     <>
