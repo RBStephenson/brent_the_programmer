@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Brent the Programmer</title>
     <link>https://brenttheprogrammer.com/</link>
@@ -14,6 +14,9 @@
       <category>Caregiving</category>
       <pubDate>Tue, 24 Jun 2026 12:00:00 -0400</pubDate>
       <description><![CDATA[A week of failed prints and a forgotten load of laundry sent me straight to the same verdict: my fault. On the difference between learning from failure and blaming yourself for it — and the grace we extend to everyone except ourselves.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/print-failures-and-laundry-web.jpg" type="image/jpeg" length="219499" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/print-failures-and-laundry-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/print-failures-and-laundry-web.jpg" />
     </item>
     <item>
       <title>The Weight of a Good Day</title>
@@ -22,6 +25,9 @@
       <category>Caregiving</category>
       <pubDate>Sun, 21 Jun 2026 12:00:00 -0400</pubDate>
       <description><![CDATA[Father's Day was wonderful — and if you're a caregiver, you probably already know why that sentence makes me uncomfortable. On guilt, the math we do before every outing, and remembering that caring goes both directions.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/weight-of-a-good-day-web.jpg" type="image/jpeg" length="247141" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/weight-of-a-good-day-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/weight-of-a-good-day-web.jpg" />
     </item>
     <item>
       <title>Was It Worth It?</title>
@@ -30,6 +36,9 @@
       <category>Caregiving</category>
       <pubDate>Sun, 14 Jun 2026 12:00:00 -0400</pubDate>
       <description><![CDATA[This weekend we took a history boat tour as a family — laughter, sunshine, a few hours that weren't about illness. Then the crash came. On PEM, the cost of making memories, and the question every caregiver eventually has to ask.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" type="image/jpeg" length="299285" />
+      <media:content url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" />
     </item>
     <item>
       <title>Diana, and the Trouble with Gold</title>
@@ -38,6 +47,9 @@
       <category>Studio Notes</category>
       <pubDate>Thu, 11 Jun 2026 12:00:00 -0400</pubDate>
       <description><![CDATA[A progress update on my first model. Skin, hair, and fur are done, and she's actually turning out well. Now I'm on the gold details — and I have learned that painting gold sucks.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/gallery/diana-web.jpg" type="image/jpeg" length="130681" />
+      <media:content url="https://brenttheprogrammer.com/assets/gallery/diana-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/gallery/diana-web.jpg" />
     </item>
     <item>
       <title>It's Not Personal. It's PEM.</title>
@@ -46,6 +58,9 @@
       <category>Caregiving</category>
       <pubDate>Sun, 07 Jun 2026 12:00:00 -0400</pubDate>
       <description><![CDATA[One of the hardest lessons I've learned as a caregiver: sometimes the person you love isn't really themselves. Sometimes it's the crash speaking for them — and knowing the difference can change everything.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" type="image/jpeg" length="299285" />
+      <media:content url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" />
     </item>
     <item>
       <title>Still Getting Set Up</title>
@@ -54,14 +69,20 @@
       <category>Studio Notes</category>
       <pubDate>Wed, 03 Jun 2026 12:00:00 -0400</pubDate>
       <description><![CDATA[There's a funny part of starting something new that nobody really talks about — the part before the thing looks like a thing. That's where I'm at right now.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" type="image/jpeg" length="299285" />
+      <media:content url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" />
     </item>
     <item>
       <title>When Burnout Starts Burning Everything Down</title>
       <link>https://brenttheprogrammer.com/?post=burnout</link>
       <guid isPermaLink="true">https://brenttheprogrammer.com/?post=burnout</guid>
       <category>Self-Care</category>
-      <pubDate>Sun, 24 May 2026 12:00:00 -0400</pubDate>
+      <pubDate>Sat, 24 May 2026 12:00:00 -0400</pubDate>
       <description><![CDATA[People talk about burnout like it always looks like exhaustion. Mine looked messier than that. On survival mode, therapy, and how sitting down to paint one small thing helped me find my way back.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" type="image/jpeg" length="299285" />
+      <media:content url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/brent-portrait-web.jpg" />
     </item>
   </channel>
 </rss>
