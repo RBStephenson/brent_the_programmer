@@ -6,7 +6,29 @@
     <atom:link href="https://brenttheprogrammer.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Miniature painting, self-care, and caregiving notes from the bench.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Jun 2026 12:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 11 Jul 2026 12:00:00 -0400</lastBuildDate>
+    <item>
+      <title>Hank Progress Update: Leather, Bowstrings, and Getting There</title>
+      <link>https://brenttheprogrammer.com/?post=hank-progress-update</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=hank-progress-update</guid>
+      <category>On the Bench</category>
+      <pubDate>Fri, 11 Jul 2026 12:00:00 -0400</pubDate>
+      <description><![CDATA[My first real 1:6 figure is starting to look like a ranger instead of a pile of primer. A quick check-in on where Hank stands — and what's still left on the pile.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/gallery/hank-wip-web.jpg" type="image/jpeg" length="307270" />
+      <media:content url="https://brenttheprogrammer.com/assets/gallery/hank-wip-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/gallery/hank-wip-web.jpg" />
+    </item>
+    <item>
+      <title>Pay the Bills First: A Lesson in Moderation</title>
+      <link>https://brenttheprogrammer.com/?post=pay-the-bills-first</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=pay-the-bills-first</guid>
+      <category>Self-Care</category>
+      <pubDate>Fri, 11 Jul 2026 11:00:00 -0400</pubDate>
+      <description><![CDATA[Self-care can become avoidance if we're not careful. On the difference between recharging and escaping — and the simple question I ask myself before I let myself paint.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/pay-the-bills-first-web.jpg" type="image/jpeg" length="241018" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/pay-the-bills-first-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/pay-the-bills-first-web.jpg" />
+    </item>
     <item>
       <title>Print Failures, Laundry, and the Stories We Tell Ourselves</title>
       <link>https://brenttheprogrammer.com/?post=print-failures-and-laundry</link>
