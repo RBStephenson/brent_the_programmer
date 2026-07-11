@@ -468,6 +468,19 @@ function BlogPage({ openPost }) {
 /* ──────────────────────────────────────────────────────────────────────
    POST (detail)
    ────────────────────────────────────────────────────────────────────── */
+function renderInline(text) {
+  const re = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts = [];
+  let last = 0, m, key = 0;
+  while ((m = re.exec(text))) {
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    parts.push(<a key={key++} href={m[2]} target="_blank" rel="noopener noreferrer">{m[1]}</a>);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts;
+}
+
 function PostPage({ post, go, openPost }) {
   const idx = POSTS.findIndex((p) => p.id === post.id);
   const prev = POSTS[idx - 1];
@@ -493,7 +506,7 @@ function PostPage({ post, go, openPost }) {
         <span>One brushstroke at a time.</span>
       </div>
     );
-    return <p key={i}>{b}</p>;
+    return <p key={i}>{renderInline(b)}</p>;
   });
 
   return (
