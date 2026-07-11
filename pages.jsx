@@ -6,7 +6,7 @@
    HOME
    ────────────────────────────────────────────────────────────────────── */
 function HomePage({ go, openPost, hero }) {
-  const featuredId = "diana";
+  const featuredId = "hank";
   const featuredGallery = GALLERY.find((g) => g.id === featuredId);
   // "Latest from the bench" = the WIP, plus a few from the pile to show what's next.
   const wips = GALLERY.filter((g) => g.status === "wip");
@@ -15,9 +15,17 @@ function HomePage({ go, openPost, hero }) {
   const featuredPost = POSTS[0];
   const pileCount = GALLERY.filter((g) => g.status === "pile").length;
 
-  // Hero variant comes from a Tweak: "featured" (current WIP) or "pile" (a sample from the pile)
+  // Hero variant comes from a Tweak: "featured" (current WIP), "pile" (a sample
+  // from the pile), or "rotate" (cycles WIPs weekly, deterministic by week number)
+  const wipsForRotation = GALLERY.filter((g) => g.status === "wip");
+  const weekNum = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000));
+  const rotated = wipsForRotation.length
+    ? wipsForRotation[weekNum % wipsForRotation.length]
+    : featuredGallery;
   const featured = hero === "pile"
     ? GALLERY.find((g) => g.status === "pile")
+    : hero === "rotate"
+    ? rotated
     : featuredGallery;
 
   return (
@@ -474,6 +482,10 @@ function PostPage({ post, go, openPost }) {
   const blocks = (post.body || []).map((b, i) => {
     if (b.startsWith("## ")) return <h2 key={i}>{b.replace(/^##\s+/, "")}</h2>;
     if (b.startsWith("> "))  return <blockquote key={i}>{b.replace(/^>\s+/, "")}</blockquote>;
+    if (b.startsWith("![")) {
+      const m = b.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+      if (m) return <img key={i} src={m[2]} alt={m[1]} className="post-inline-img" style={{ width: "100%", borderRadius: 4, margin: "8px 0" }} />;
+    }
     if (b === "~~signoff") return (
       <div className="post-signoff" key={i}>
         <span>Trust the process.</span>

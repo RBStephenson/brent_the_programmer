@@ -178,7 +178,8 @@ function App() {
         <TweakRadio label="Hero" value={t.hero}
                     options={[
                       { value: "featured", label: "Current WIP" },
-                      { value: "pile",     label: "From the pile" }
+                      { value: "pile",     label: "From the pile" },
+                      { value: "rotate",   label: "Rotate weekly" }
                     ]}
                     onChange={(v) => setTweak("hero", v)} />
         <TweakToggle label="Washi tape on cards" value={t.showTape}
