@@ -3,9 +3,16 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://brenttheprogrammer.com/</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://brenttheprogrammer.com/?post=every-research-breakthrough</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://brenttheprogrammer.com/assets/posts/every-research-breakthrough-web.jpg</image:loc><image:title>Every Research Breakthrough Is Another Reason to Keep Hope Alive</image:title></image:image>
   </url>
   <url>
     <loc>https://brenttheprogrammer.com/?post=stl-studio-release</loc>

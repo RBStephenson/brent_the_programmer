@@ -6,7 +6,18 @@
     <atom:link href="https://brenttheprogrammer.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Miniature painting, self-care, and caregiving notes from the bench.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Jul 2026 13:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 12:00:00 -0400</lastBuildDate>
+    <item>
+      <title>Every Research Breakthrough Is Another Reason to Keep Hope Alive</title>
+      <link>https://brenttheprogrammer.com/?post=every-research-breakthrough</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=every-research-breakthrough</guid>
+      <category>ME/CFS</category>
+      <pubDate>Sat, 18 Jul 2026 12:00:00 -0400</pubDate>
+      <description><![CDATA[On celebrating ME/CFS research progress without expecting miracles — a biomarker study, repurposed treatments, and mitochondrial research, and what hope without hype looks like for caregivers.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/every-research-breakthrough-web.jpg" type="image/jpeg" length="266100" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/every-research-breakthrough-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/every-research-breakthrough-web.jpg" />
+    </item>
     <item>
       <title>STL Studio: Finally Making Sense of My 3D Print Library</title>
       <link>https://brenttheprogrammer.com/?post=stl-studio-release</link>
