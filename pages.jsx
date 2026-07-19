@@ -288,7 +288,8 @@ function GalleryPage() {
         const renderCard = (g) => (
           <article key={g.id} className="gallery-card"
                    onClick={() => open(g.id)}>
-            <Placeholder label={g.placeholder} src={g.image} alt={g.title} />
+            <Placeholder label={g.placeholder} src={g.image}
+                         alt={`${g.title}${g.designer && g.designer !== "unlisted" ? `, ${g.designer} design` : ""} \u2014 ${g.status === "wip" ? "in progress" : "printed, unpainted"}`} />
             <div className={`tag ${g.status === "wip" ? "wip" : ""}`}>
               {g.status === "wip" ? "WIP" : "In the pile"}
             </div>

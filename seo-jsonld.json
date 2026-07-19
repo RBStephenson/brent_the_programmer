@@ -41,6 +41,58 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "headline": "Every Research Breakthrough Is Another Reason to Keep Hope Alive",
+          "url": "https://brenttheprogrammer.com/?post=every-research-breakthrough",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=every-research-breakthrough",
+          "datePublished": "2026-07-18",
+          "dateModified": "2026-07-18",
+          "articleSection": "ME/CFS",
+          "description": "On celebrating ME/CFS research progress without expecting miracles — a biomarker study, repurposed treatments, and mitochondrial research, and what hope without hype looks like for caregivers.",
+          "image": "https://brenttheprogrammer.com/assets/posts/every-research-breakthrough-web.jpg",
+          "author": { "@id": "https://brenttheprogrammer.com/#person" },
+          "publisher": { "@id": "https://brenttheprogrammer.com/#person" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "STL Studio: Finally Making Sense of My 3D Print Library",
+          "url": "https://brenttheprogrammer.com/?post=stl-studio-release",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=stl-studio-release",
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11",
+          "articleSection": "Side Project",
+          "description": "A free, open-source app I built for organizing, browsing, and managing a huge 3D-printable model library — variant grouping, metadata enrichment, and AI-assisted painting guides built around your own paint shelf.",
+          "image": "https://brenttheprogrammer.com/assets/posts/stl-studio-1-web.jpg",
+          "author": { "@id": "https://brenttheprogrammer.com/#person" },
+          "publisher": { "@id": "https://brenttheprogrammer.com/#person" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Hank Progress Update: Leather, Bowstrings, and Getting There",
+          "url": "https://brenttheprogrammer.com/?post=hank-progress-update",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=hank-progress-update",
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11",
+          "articleSection": "On the Bench",
+          "description": "My first real 1:6 figure is starting to look like a ranger instead of a pile of primer. A quick check-in on where Hank stands — and what's still left on the pile.",
+          "image": "https://brenttheprogrammer.com/assets/gallery/hank-wip-web.jpg",
+          "author": { "@id": "https://brenttheprogrammer.com/#person" },
+          "publisher": { "@id": "https://brenttheprogrammer.com/#person" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Pay the Bills First: A Lesson in Moderation",
+          "url": "https://brenttheprogrammer.com/?post=pay-the-bills-first",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=pay-the-bills-first",
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11",
+          "articleSection": "Self-Care",
+          "description": "Self-care can become avoidance if we're not careful. On the difference between recharging and escaping — and the simple question I ask myself before I let myself paint.",
+          "image": "https://brenttheprogrammer.com/assets/posts/pay-the-bills-first-web.jpg",
+          "author": { "@id": "https://brenttheprogrammer.com/#person" },
+          "publisher": { "@id": "https://brenttheprogrammer.com/#person" }
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "Print Failures, Laundry, and the Stories We Tell Ourselves",
           "url": "https://brenttheprogrammer.com/?post=print-failures-and-laundry",
           "mainEntityOfPage": "https://brenttheprogrammer.com/?post=print-failures-and-laundry",
