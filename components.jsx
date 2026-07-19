@@ -4,6 +4,12 @@
 
 /* ── Icons (inline SVG, stroke-based) ──────────────────────────────────── */
 function Icon({ name, size = 14 }) {
+  if (name === "x") return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.7 8.8L23 22h-6.9l-5.4-7-6.2 7H1.3l8.2-9.4L1 2h7l4.9 6.4L18.9 2Zm-1.2 18h1.9L7.4 3.9H5.4L17.7 20Z"/></svg>;
+  if (name === "facebook") return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8.5H16l.4-3.2h-2.9V8.2c0-.9.3-1.6 1.7-1.6H16.5V3.8C16.1 3.7 15 3.6 13.8 3.6c-2.6 0-4.4 1.6-4.4 4.5v2.2H6.9v3.2h2.5V22h4.1Z"/></svg>;
+  if (name === "linkedin") return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M6.9 8.4H3.6V20h3.3V8.4ZM5.3 3.6a1.9 1.9 0 1 0 0 3.9 1.9 1.9 0 0 0 0-3.9ZM20.4 20h-3.3v-6.1c0-1.5-.6-2.5-1.9-2.5-1 0-1.6.7-1.9 1.4-.1.2-.1.6-.1.9V20h-3.3s.1-10.6 0-11.6h3.3v1.6c.4-.7 1.2-1.7 3-1.7 2.2 0 3.9 1.4 3.9 4.5V20Z"/></svg>;
+  if (name === "reddit") return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a2 2 0 0 0-3.4-1.4 9 9 0 0 0-4.4-1.4l.8-3.6 2.5.6a1.4 1.4 0 1 0 .2-1l-2.8-.6a.5.5 0 0 0-.6.4l-.9 4.2a9 9 0 0 0-4.5 1.4A2 2 0 1 0 6.4 14a3.7 3.7 0 0 0 0 .6c0 2.5 3 4.5 6.6 4.5s6.6-2 6.6-4.5a3.7 3.7 0 0 0 0-.6A2 2 0 0 0 22 12Zm-13 1a1.1 1.1 0 1 1 2.1 0 1.1 1.1 0 0 1-2.1 0Zm7.3 3.1a4.6 4.6 0 0 1-3.3 1.1 4.6 4.6 0 0 1-3.3-1.1.4.4 0 0 1 .6-.6c.6.5 1.6.8 2.7.8s2.1-.3 2.7-.8a.4.4 0 0 1 .6.6Zm-.2-2a1.1 1.1 0 1 1 0-2.2 1.1 1.1 0 0 1 0 2.2Z"/></svg>;
+  if (name === "threads") return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M16.9 11.2c-.1-3.6-2.2-5.7-5.7-5.7-2.4 0-4.3 1-5.3 2.8l1.7.9c.7-1.2 1.9-1.8 3.6-1.8 2.4 0 3.6 1.3 3.8 3.4-.9-.2-1.9-.3-2.8-.3-2.9 0-4.9 1.3-4.9 3.6 0 2 1.8 3.4 4.2 3.4 2.1 0 3.6-.9 4.4-2.4.4.7.6 1.6.7 2.2l1.8-.4c-.1-.9-.4-2.1-1-3.1.4-.1.5-.4.5-2.6Zm-5.2 4.2c-1.4 0-2.3-.6-2.3-1.6 0-1.1 1-1.7 2.7-1.7.8 0 1.6.1 2.4.3-.2 2-1.3 3-2.8 3Z"/></svg>;
+  if (name === "instagram") return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r="1"/></svg>;
   const s = { width: size, height: size, fill: "none", stroke: "currentColor",
               strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round" };
   switch (name) {

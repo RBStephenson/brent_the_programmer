@@ -477,6 +477,56 @@ function copyPostLink(post) {
   else prompt("Copy link:", url);
 }
 
+function ShareMenu({ post, small }) {
+  const [open, setOpen] = React.useState(false);
+  const [copied, setCopied] = React.useState(false);
+  const ref = React.useRef(null);
+  React.useEffect(() => {
+    if (!open) return;
+    const onDoc = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
+    document.addEventListener("mousedown", onDoc);
+    return () => document.removeEventListener("mousedown", onDoc);
+  }, [open]);
+  const url = postUrl(post);
+  const title = post.title;
+  const links = [
+    { name: "X", icon: "x", href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}` },
+    { name: "Threads", icon: "threads", href: `https://www.threads.net/intent/post?text=${encodeURIComponent(title + " " + url)}` },
+    { name: "Facebook", icon: "facebook", href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}` },
+    { name: "LinkedIn", icon: "linkedin", href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}` },
+    { name: "Reddit", icon: "reddit", href: `https://www.reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}` },
+    { name: "Instagram", icon: "instagram", href: "https://www.instagram.com/", instagram: true },
+  ];
+  const doCopy = () => {
+    copyPostLink(post);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1600);
+  };
+  return (
+    <div className="share-menu" ref={ref}>
+      {small
+        ? <span style={{ display: "inline-flex", gap: 6, alignItems: "center", cursor: "pointer" }} onClick={() => setOpen((o) => !o)}>
+            <Icon name="link" size={11} /> share
+          </span>
+        : <button className="hicon" aria-label="share" onClick={() => setOpen((o) => !o)}><Icon name="link" size={13} /></button>}
+      {open && (
+        <div className="share-pop">
+          {links.map((l) => (
+            <a key={l.name} href={l.href} target="_blank" rel="noopener noreferrer" className="share-pop-item"
+               onClick={l.instagram ? () => copyPostLink(post) : undefined}
+               title={l.instagram ? "Link copied — paste it into your Instagram bio or story" : undefined}>
+              <Icon name={l.icon} size={14} /> {l.name}
+            </a>
+          ))}
+          <button className="share-pop-item share-pop-copy" onClick={doCopy}>
+            <Icon name="link" size={14} /> {copied ? "Copied!" : "Copy link"}
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function renderInline(text) {
   const re = /\[([^\]]+)\]\(([^)]+)\)/g;
   const parts = [];
@@ -536,8 +586,8 @@ function PostPage({ post, go, openPost }) {
             <span>By Brent · brent_the_programmer</span>
             <span>{post.date}</span>
             <span>{post.read} read</span>
-            <span style={{ display: "inline-flex", gap: 6, alignItems: "center", cursor: "pointer" }} onClick={() => copyPostLink(post)}>
-              <Icon name="link" size={11} /> share
+            <span style={{ display: "inline-flex", alignItems: "center" }}>
+              <ShareMenu post={post} small />
             </span>
           </div>
         </header>
@@ -553,7 +603,7 @@ function PostPage({ post, go, openPost }) {
                 : headings.map((h, i) => <li key={i}><a>{h}</a></li>)}
             </ul>
             <div className="share">
-              <button className="hicon" aria-label="share" onClick={() => copyPostLink(post)}><Icon name="link" size={13} /></button>
+              <ShareMenu post={post} />
               <a className="hicon" aria-label="rss feed" href="feed.xml" target="_blank" rel="noopener noreferrer"><Icon name="rss" size={13} /></a>
               <a className="hicon" aria-label="email" href={`mailto:?subject=${encodeURIComponent(post.title)}&body=${encodeURIComponent(postUrl(post))}`}><Icon name="mail" size={13} /></a>
             </div>
