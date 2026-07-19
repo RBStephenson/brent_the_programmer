@@ -468,6 +468,15 @@ function BlogPage({ openPost }) {
 /* ──────────────────────────────────────────────────────────────────────
    POST (detail)
    ────────────────────────────────────────────────────────────────────── */
+function postUrl(post) {
+  return `${location.origin}${location.pathname}?post=${post.id}`;
+}
+function copyPostLink(post) {
+  const url = postUrl(post);
+  if (navigator.clipboard) navigator.clipboard.writeText(url).catch(() => {});
+  else prompt("Copy link:", url);
+}
+
 function renderInline(text) {
   const re = /\[([^\]]+)\]\(([^)]+)\)/g;
   const parts = [];
@@ -527,7 +536,7 @@ function PostPage({ post, go, openPost }) {
             <span>By Brent · brent_the_programmer</span>
             <span>{post.date}</span>
             <span>{post.read} read</span>
-            <span style={{ display: "inline-flex", gap: 6, alignItems: "center" }}>
+            <span style={{ display: "inline-flex", gap: 6, alignItems: "center", cursor: "pointer" }} onClick={() => copyPostLink(post)}>
               <Icon name="link" size={11} /> share
             </span>
           </div>
@@ -544,9 +553,9 @@ function PostPage({ post, go, openPost }) {
                 : headings.map((h, i) => <li key={i}><a>{h}</a></li>)}
             </ul>
             <div className="share">
-              <button className="hicon" aria-label="share"><Icon name="link" size={13} /></button>
-              <button className="hicon" aria-label="bookmark"><Icon name="rss" size={13} /></button>
-              <button className="hicon" aria-label="email"><Icon name="mail" size={13} /></button>
+              <button className="hicon" aria-label="share" onClick={() => copyPostLink(post)}><Icon name="link" size={13} /></button>
+              <a className="hicon" aria-label="rss feed" href="feed.xml" target="_blank" rel="noopener noreferrer"><Icon name="rss" size={13} /></a>
+              <a className="hicon" aria-label="email" href={`mailto:?subject=${encodeURIComponent(post.title)}&body=${encodeURIComponent(postUrl(post))}`}><Icon name="mail" size={13} /></a>
             </div>
             <div style={{ marginTop: 28 }}>
               <span className="smallcaps">Tagged</span>
