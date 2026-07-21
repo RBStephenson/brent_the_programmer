@@ -41,6 +41,19 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "headline": "When Hope Meets Evidence: Why the SIGNAL Study Matters for the ME/CFS Community",
+          "url": "https://brenttheprogrammer.com/?post=signal-study",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=signal-study",
+          "datePublished": "2026-07-21",
+          "dateModified": "2026-07-21",
+          "articleSection": "ME/CFS",
+          "description": "A new Solve M.E.\u2013funded study lets people with ME/CFS and Long COVID borrow therapeutic devices at home and contribute real-world data — research that finally meets patients where they are.",
+          "image": "https://brenttheprogrammer.com/assets/posts/signal-study-web.jpg",
+          "author": { "@id": "https://brenttheprogrammer.com/#person" },
+          "publisher": { "@id": "https://brenttheprogrammer.com/#person" }
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "Every Research Breakthrough Is Another Reason to Keep Hope Alive",
           "url": "https://brenttheprogrammer.com/?post=every-research-breakthrough",
           "mainEntityOfPage": "https://brenttheprogrammer.com/?post=every-research-breakthrough",

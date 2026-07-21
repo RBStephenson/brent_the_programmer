@@ -6,7 +6,18 @@
     <atom:link href="https://brenttheprogrammer.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Miniature painting, self-care, and caregiving notes from the bench.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 12:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 12:00:00 -0400</lastBuildDate>
+    <item>
+      <title>When Hope Meets Evidence: Why the SIGNAL Study Matters for the ME/CFS Community</title>
+      <link>https://brenttheprogrammer.com/?post=signal-study</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=signal-study</guid>
+      <category>ME/CFS</category>
+      <pubDate>Tue, 21 Jul 2026 12:00:00 -0400</pubDate>
+      <description><![CDATA[A new Solve M.E.–funded study lets people with ME/CFS and Long COVID borrow therapeutic devices at home and contribute real-world data — research that finally meets patients where they are.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/signal-study-web.jpg" type="image/jpeg" length="1" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/signal-study-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/signal-study-web.jpg" />
+    </item>
     <item>
       <title>Every Research Breakthrough Is Another Reason to Keep Hope Alive</title>
       <link>https://brenttheprogrammer.com/?post=every-research-breakthrough</link>

@@ -3,9 +3,16 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://brenttheprogrammer.com/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://brenttheprogrammer.com/?post=signal-study</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://brenttheprogrammer.com/assets/posts/signal-study-web.jpg</image:loc><image:title>When Hope Meets Evidence: Why the SIGNAL Study Matters for the ME/CFS Community</image:title></image:image>
   </url>
   <url>
     <loc>https://brenttheprogrammer.com/?post=every-research-breakthrough</loc>
