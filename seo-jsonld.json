@@ -41,6 +41,18 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "headline": "STL Studio vs. Orynt3D vs. Manyfold: Why We Built Our Own",
+          "url": "https://brenttheprogrammer.com/?post=stl-studio-vs-orynt3d-manyfold",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=stl-studio-vs-orynt3d-manyfold",
+          "datePublished": "2026-07-22",
+          "dateModified": "2026-07-22",
+          "articleSection": "Side Project",
+          "description": "Two makers, two file-organizing headaches, and the tool we ended up building together instead — a look at Orynt3D, Manyfold, and why STL Studio exists.",
+          "author": { "@id": "https://brenttheprogrammer.com/#person" },
+          "publisher": { "@id": "https://brenttheprogrammer.com/#person" }
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "When Hope Meets Evidence: Why the SIGNAL Study Matters for the ME/CFS Community",
           "url": "https://brenttheprogrammer.com/?post=signal-study",
           "mainEntityOfPage": "https://brenttheprogrammer.com/?post=signal-study",

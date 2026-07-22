@@ -6,7 +6,18 @@
     <atom:link href="https://brenttheprogrammer.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Miniature painting, self-care, and caregiving notes from the bench.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jul 2026 12:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 12:00:00 -0400</lastBuildDate>
+    <item>
+      <title>STL Studio vs. Orynt3D vs. Manyfold: Why We Built Our Own</title>
+      <link>https://brenttheprogrammer.com/?post=stl-studio-vs-orynt3d-manyfold</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=stl-studio-vs-orynt3d-manyfold</guid>
+      <category>Side Project</category>
+      <pubDate>Wed, 22 Jul 2026 12:00:00 -0400</pubDate>
+      <description><![CDATA[Two makers, two file-organizing headaches, and the tool we ended up building together instead — a look at Orynt3D, Manyfold, and why STL Studio exists.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/stl-studio-vs-orynt3d-manyfold-web.jpg" type="image/jpeg" length="1" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/stl-studio-vs-orynt3d-manyfold-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/stl-studio-vs-orynt3d-manyfold-web.jpg" />
+    </item>
     <item>
       <title>When Hope Meets Evidence: Why the SIGNAL Study Matters for the ME/CFS Community</title>
       <link>https://brenttheprogrammer.com/?post=signal-study</link>
