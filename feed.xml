@@ -6,7 +6,18 @@
     <atom:link href="https://brenttheprogrammer.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Miniature painting, self-care, and caregiving notes from the bench.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2026 12:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 12:00:00 -0400</lastBuildDate>
+    <item>
+      <title>Rapamycin Isn't a Miracle Cure. That's Exactly Why This Study Gives Me Hope.</title>
+      <link>https://brenttheprogrammer.com/?post=rapamycin-study</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=rapamycin-study</guid>
+      <category>ME/CFS</category>
+      <pubDate>Sat, 25 Jul 2026 12:00:00 -0400</pubDate>
+      <description><![CDATA[A new observational study on low-dose rapamycin found measurable biological changes alongside symptom improvement in ME/CFS — and the honesty about its limits is what makes it credible.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/rapamycin-study-web.jpg" type="image/jpeg" length="1" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/rapamycin-study-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/rapamycin-study-web.jpg" />
+    </item>
     <item>
       <title>STL Studio vs. Orynt3D vs. Manyfold: Why We Built Our Own</title>
       <link>https://brenttheprogrammer.com/?post=stl-studio-vs-orynt3d-manyfold</link>

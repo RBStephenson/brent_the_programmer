@@ -41,6 +41,19 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "headline": "Rapamycin Isn't a Miracle Cure. That's Exactly Why This Study Gives Me Hope.",
+          "url": "https://brenttheprogrammer.com/?post=rapamycin-study",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=rapamycin-study",
+          "datePublished": "2026-07-25",
+          "dateModified": "2026-07-25",
+          "articleSection": "ME/CFS",
+          "description": "A new observational study on low-dose rapamycin found measurable biological changes alongside symptom improvement in ME/CFS — and the honesty about its limits is what makes it credible.",
+          "image": "https://brenttheprogrammer.com/assets/posts/rapamycin-study-web.jpg",
+          "author": { "@id": "https://brenttheprogrammer.com/#person" },
+          "publisher": { "@id": "https://brenttheprogrammer.com/#person" }
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "STL Studio vs. Orynt3D vs. Manyfold: Why We Built Our Own",
           "url": "https://brenttheprogrammer.com/?post=stl-studio-vs-orynt3d-manyfold",
           "mainEntityOfPage": "https://brenttheprogrammer.com/?post=stl-studio-vs-orynt3d-manyfold",
