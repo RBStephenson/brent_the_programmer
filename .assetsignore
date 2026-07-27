@@ -1,0 +1,13 @@
+# Files here aren't part of the deployed static site — they're tooling/config
+# that the Worker bundler (_worker.js) reads at build time, not runtime assets.
+node_modules
+package.json
+package-lock.json
+wrangler.jsonc
+_worker.js
+scripts
+.git
+.gitignore
+README.md
+CLAUDE.md
+screenshots
