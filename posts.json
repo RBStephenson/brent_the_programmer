@@ -1,0 +1,128 @@
+[
+  {
+    "id": "rapamycin-study",
+    "title": "Rapamycin Isn't a Miracle Cure. That's Exactly Why This Study Gives Me Hope.",
+    "excerpt": "A new observational study on low-dose rapamycin found measurable biological changes alongside symptom improvement in ME/CFS — and the honesty about its limits is what makes it credible.",
+    "cat": "ME/CFS",
+    "image": "assets/posts/rapamycin-study-web.jpg",
+    "published": "2026-07-25T12:00:00-04:00",
+    "modified": "2026-07-25T12:00:00-04:00"
+  },
+  {
+    "id": "stl-studio-vs-orynt3d-manyfold",
+    "title": "STL Studio vs. Orynt3D vs. Manyfold: Why We Built Our Own",
+    "excerpt": "Two makers, two file-organizing headaches, and the tool we ended up building together instead — a look at Orynt3D, Manyfold, and why STL Studio exists.",
+    "cat": "Side Project",
+    "image": "assets/posts/stl-studio-vs-orynt3d-manyfold-web.jpg",
+    "published": "2026-07-22T12:00:00-04:00",
+    "modified": "2026-07-22T12:00:00-04:00"
+  },
+  {
+    "id": "signal-study",
+    "title": "When Hope Meets Evidence: Why the SIGNAL Study Matters for the ME/CFS Community",
+    "excerpt": "A new Solve M.E.–funded study lets people with ME/CFS and Long COVID borrow therapeutic devices at home and contribute real-world data — research that finally meets patients where they are.",
+    "cat": "ME/CFS",
+    "image": "assets/posts/signal-study-web.jpg",
+    "published": "2026-07-21T12:00:00-04:00",
+    "modified": "2026-07-21T12:00:00-04:00"
+  },
+  {
+    "id": "every-research-breakthrough",
+    "title": "Every Research Breakthrough Is Another Reason to Keep Hope Alive",
+    "excerpt": "On celebrating ME/CFS research progress without expecting miracles — a biomarker study, repurposed treatments, and mitochondrial research, and what hope without hype looks like for caregivers.",
+    "cat": "ME/CFS",
+    "image": "assets/posts/every-research-breakthrough-web.jpg",
+    "published": "2026-07-18T12:00:00-04:00",
+    "modified": "2026-07-18T12:00:00-04:00"
+  },
+  {
+    "id": "stl-studio-release",
+    "title": "STL Studio: Finally Making Sense of My 3D Print Library",
+    "excerpt": "A free, open-source app I built for organizing, browsing, and managing a huge 3D-printable model library — variant grouping, metadata enrichment, and AI-assisted painting guides built around your own paint shelf.",
+    "cat": "Side Project",
+    "image": "assets/posts/stl-studio-1-web.jpg",
+    "published": "2026-07-11T13:00:00-04:00",
+    "modified": "2026-07-11T13:00:00-04:00"
+  },
+  {
+    "id": "hank-progress-update",
+    "title": "Hank Progress Update: Leather, Bowstrings, and Getting There",
+    "excerpt": "My first real 1:6 figure is starting to look like a ranger instead of a pile of primer. A quick check-in on where Hank stands — and what's still left on the pile.",
+    "cat": "On the Bench",
+    "image": "assets/gallery/hank-wip-web.jpg",
+    "published": "2026-07-11T12:00:00-04:00",
+    "modified": "2026-07-11T12:00:00-04:00"
+  },
+  {
+    "id": "pay-the-bills-first",
+    "title": "Pay the Bills First: A Lesson in Moderation",
+    "excerpt": "Self-care can become avoidance if we're not careful. On the difference between recharging and escaping — and the simple question I ask myself before I let myself paint.",
+    "cat": "Self-Care",
+    "image": "assets/posts/pay-the-bills-first-web.jpg",
+    "published": "2026-07-11T11:00:00-04:00",
+    "modified": "2026-07-11T11:00:00-04:00"
+  },
+  {
+    "id": "print-failures-and-laundry",
+    "title": "Print Failures, Laundry, and the Stories We Tell Ourselves",
+    "excerpt": "A week of failed prints and a forgotten load of laundry sent me straight to the same verdict: my fault. On the difference between learning from failure and blaming yourself for it — and the grace we extend to everyone except ourselves.",
+    "cat": "Caregiving",
+    "image": "assets/posts/print-failures-and-laundry-web.jpg",
+    "published": "2026-06-24T12:00:00-04:00",
+    "modified": "2026-06-24T12:00:00-04:00"
+  },
+  {
+    "id": "weight-of-a-good-day",
+    "title": "The Weight of a Good Day",
+    "excerpt": "Father's Day was wonderful — and if you're a caregiver, you probably already know why that sentence makes me uncomfortable. On guilt, the math we do before every outing, and remembering that caring goes both directions.",
+    "cat": "Caregiving",
+    "image": "assets/posts/weight-of-a-good-day-web.jpg",
+    "published": "2026-06-21T12:00:00-04:00",
+    "modified": "2026-06-21T12:00:00-04:00"
+  },
+  {
+    "id": "was-it-worth-it",
+    "title": "Was It Worth It?",
+    "excerpt": "This weekend we took a history boat tour as a family — laughter, sunshine, a few hours that weren't about illness. Then the crash came. On PEM, the cost of making memories, and the question every caregiver eventually has to ask.",
+    "cat": "Caregiving",
+    "image": "assets/brent-portrait-web.jpg",
+    "published": "2026-06-14T12:00:00-04:00",
+    "modified": "2026-06-14T12:00:00-04:00"
+  },
+  {
+    "id": "diana-and-the-gold",
+    "title": "Diana, and the Trouble with Gold",
+    "excerpt": "A progress update on my first model. Skin, hair, and fur are done, and she's actually turning out well. Now I'm on the gold details — and I have learned that painting gold sucks.",
+    "cat": "Studio Notes",
+    "image": "assets/gallery/diana-web.jpg",
+    "published": "2026-06-11T12:00:00-04:00",
+    "modified": "2026-06-11T12:00:00-04:00"
+  },
+  {
+    "id": "its-not-personal-its-pem",
+    "title": "It's Not Personal. It's PEM.",
+    "excerpt": "One of the hardest lessons I've learned as a caregiver: sometimes the person you love isn't really themselves. Sometimes it's the crash speaking for them — and knowing the difference can change everything.",
+    "cat": "Caregiving",
+    "image": "assets/brent-portrait-web.jpg",
+    "published": "2026-06-07T12:00:00-04:00",
+    "modified": "2026-06-07T12:00:00-04:00"
+  },
+  {
+    "id": "still-getting-set-up",
+    "title": "Still Getting Set Up",
+    "excerpt": "There's a funny part of starting something new that nobody really talks about — the part before the thing looks like a thing. That's where I'm at right now.",
+    "cat": "Studio Notes",
+    "image": "assets/brent-portrait-web.jpg",
+    "published": "2026-06-03T12:00:00-04:00",
+    "modified": "2026-06-03T12:00:00-04:00"
+  },
+  {
+    "id": "burnout",
+    "title": "When Burnout Starts Burning Everything Down",
+    "excerpt": "People talk about burnout like it always looks like exhaustion. Mine looked messier than that. On survival mode, therapy, and how sitting down to paint one small thing helped me find my way back.",
+    "cat": "Self-Care",
+    "image": "assets/brent-portrait-web.jpg",
+    "published": "2026-05-24T12:00:00-04:00",
+    "modified": "2026-05-24T12:00:00-04:00"
+  }
+]

@@ -295,6 +295,7 @@ const POSTS = [
     title: "Rapamycin Isn't a Miracle Cure. That's Exactly Why This Study Gives Me Hope.",
     cat: "ME/CFS",
     date: "July 2026",
+    published: "2026-07-25T12:00:00-04:00",
     read: "6 min",
     excerpt: "A new observational study on low-dose rapamycin found measurable biological changes alongside symptom improvement in ME/CFS \u2014 and the honesty about its limits is what makes it credible.",
     body: [
@@ -381,6 +382,7 @@ const POSTS = [
     title: "STL Studio vs. Orynt3D vs. Manyfold: Why We Built Our Own",
     cat: "Side Project",
     date: "July 2026",
+    published: "2026-07-22T12:00:00-04:00",
     read: "6 min",
     excerpt: "Two makers, two file-organizing headaches, and the tool we ended up building together instead \u2014 a look at Orynt3D, Manyfold, and why STL Studio exists.",
     body: [
@@ -443,6 +445,7 @@ const POSTS = [
     title: "When Hope Meets Evidence: Why the SIGNAL Study Matters for the ME/CFS Community",
     cat: "ME/CFS",
     date: "July 2026",
+    published: "2026-07-21T12:00:00-04:00",
     read: "5 min",
     excerpt: "A new Solve M.E.\u2013funded study lets people with ME/CFS and Long COVID borrow therapeutic devices at home and contribute real-world data \u2014 research that finally meets patients where they are.",
     body: [
@@ -493,6 +496,7 @@ const POSTS = [
     title: "Every Research Breakthrough Is Another Reason to Keep Hope Alive",
     cat: "ME/CFS",
     date: "July 2026",
+    published: "2026-07-18T12:00:00-04:00",
     read: "6 min",
     excerpt: "On celebrating ME/CFS research progress without expecting miracles \u2014 a biomarker study, repurposed treatments, and mitochondrial research, and what hope without hype looks like for caregivers.",
     body: [
@@ -559,6 +563,7 @@ const POSTS = [
     title: "STL Studio: Finally Making Sense of My 3D Print Library",
     cat: "Side Project",
     date: "July 2026",
+    published: "2026-07-11T13:00:00-04:00",
     read: "6 min",
     excerpt: "A free, open-source app I built for organizing, browsing, and managing a huge 3D-printable model library \u2014 variant grouping, metadata enrichment, and AI-assisted painting guides built around your own paint shelf.",
     body: [
@@ -603,6 +608,7 @@ const POSTS = [
     title: "Hank Progress Update: Leather, Bowstrings, and Getting There",
     cat: "On the Bench",
     date: "July 2026",
+    published: "2026-07-11T12:00:00-04:00",
     read: "3 min",
     excerpt: "My first real 1:6 figure is starting to look like a ranger instead of a pile of primer. A quick check-in on where Hank stands \u2014 and what's still left on the pile.",
     body: [
@@ -632,6 +638,7 @@ const POSTS = [
     title: "Pay the Bills First: A Lesson in Moderation",
     cat: "Self-Care",
     date: "July 2026",
+    published: "2026-07-11T11:00:00-04:00",
     read: "4 min",
     excerpt: "Self-care can become avoidance if we're not careful. On the difference between recharging and escaping \u2014 and the simple question I ask myself before I let myself paint.",
     body: [
@@ -690,6 +697,7 @@ const POSTS = [
     title: "Print Failures, Laundry, and the Stories We Tell Ourselves",
     cat: "Caregiving",
     date: "June 2026",
+    published: "2026-06-24T12:00:00-04:00",
     read: "5 min",
     excerpt: "A week of failed prints and a forgotten load of laundry sent me straight to the same verdict: my fault. On the difference between learning from failure and blaming yourself for it \u2014 and the grace we extend to everyone except ourselves.",
     body: [
@@ -760,6 +768,7 @@ const POSTS = [
     title: "The Weight of a Good Day",
     cat: "Caregiving",
     date: "June 2026",
+    published: "2026-06-21T12:00:00-04:00",
     read: "5 min",
     excerpt: "Father's Day was wonderful \u2014 and if you're a caregiver, you probably already know why that sentence makes me uncomfortable. On guilt, the math we do before every outing, and remembering that caring goes both directions.",
     body: [
@@ -815,6 +824,7 @@ const POSTS = [
     title: "Was It Worth It?",
     cat: "Caregiving",
     date: "June 2026",
+    published: "2026-06-14T12:00:00-04:00",
     read: "4 min",
     excerpt: "This weekend we took a history boat tour as a family \u2014 laughter, sunshine, a few hours that weren't about illness. Then the crash came. On PEM, the cost of making memories, and the question every caregiver eventually has to ask.",
     body: [
@@ -870,6 +880,7 @@ const POSTS = [
     title: "Diana, and the Trouble with Gold",
     cat: "Studio Notes",
     date: "June 2026",
+    published: "2026-06-11T12:00:00-04:00",
     read: "2 min",
     excerpt: "A progress update on my first model. Skin, hair, and fur are done, and she's actually turning out well. Now I'm on the gold details — and I have learned that painting gold sucks.",
     image: "assets/gallery/diana-web.jpg",
@@ -895,6 +906,7 @@ const POSTS = [
     title: "It's Not Personal. It's PEM.",
     cat: "Caregiving",
     date: "June 2026",
+    published: "2026-06-07T12:00:00-04:00",
     read: "4 min",
     excerpt: "One of the hardest lessons I've learned as a caregiver: sometimes the person you love isn't really themselves. Sometimes it's the crash speaking for them — and knowing the difference can change everything.",
     body: [
@@ -938,6 +950,7 @@ const POSTS = [
     title: "Still Getting Set Up",
     cat: "Studio Notes",
     date: "June 2026",
+    published: "2026-06-03T12:00:00-04:00",
     read: "3 min",
     excerpt: "There's a funny part of starting something new that nobody really talks about — the part before the thing looks like a thing. That's where I'm at right now.",
     body: [
@@ -979,6 +992,7 @@ const POSTS = [
     title: "When Burnout Starts Burning Everything Down",
     cat: "Self-Care",
     date: "May 2026",
+    published: "2026-05-24T12:00:00-04:00",
     read: "5 min",
     excerpt: "People talk about burnout like it always looks like exhaustion. Mine looked messier than that. On survival mode, therapy, and how sitting down to paint one small thing helped me find my way back.",
     body: [
