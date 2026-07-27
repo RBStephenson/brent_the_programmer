@@ -1,0 +1,15 @@
+#!/bin/sh
+# Keeps posts.json, sitemap.xml, feed.xml, seo-jsonld.json, and index.html's
+# JSON-LD block in sync with data.jsx on every commit. See scripts/generate-seo.mjs.
+
+node scripts/generate-seo.mjs
+status=$?
+
+if [ $status -ne 0 ]; then
+  echo "pre-commit: generate-seo.mjs failed — fix data.jsx (see error above) before committing." >&2
+  exit 1
+fi
+
+git add posts.json sitemap.xml feed.xml seo-jsonld.json index.html
+
+exit 0
