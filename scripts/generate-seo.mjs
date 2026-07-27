@@ -233,15 +233,34 @@ function updateIndexHtml(jsonLd) {
   writeFileSync(path, next, "utf8");
 }
 
+function loadPreviousPublishedDates() {
+  // Recovers `published` dates for posts that already had one in a prior run,
+  // in case data.jsx got fully re-exported (e.g. from Claude Design) without
+  // carrying that field over. Only genuinely new posts need a manual date.
+  try {
+    const prev = JSON.parse(readFileSync(join(ROOT, "posts.json"), "utf8"));
+    return new Map(prev.map((p) => [p.id, p.published]));
+  } catch {
+    return new Map();
+  }
+}
+
 function main() {
-  const posts = loadPosts()
-    .slice()
-    .sort((a, b) => new Date(b.published) - new Date(a.published));
+  const previousPublished = loadPreviousPublishedDates();
+  const posts = loadPosts().map((p) =>
+    p.published ? p : { ...p, published: previousPublished.get(p.id) }
+  );
 
   const missing = posts.filter((p) => !p.published);
   if (missing.length) {
-    throw new Error(`Post(s) missing a "published" ISO date: ${missing.map((p) => p.id).join(", ")}`);
+    throw new Error(
+      `New post(s) with no "published" ISO date and no prior recorded one: ${missing
+        .map((p) => p.id)
+        .join(", ")}. Add e.g. published: "2026-07-27T12:00:00-04:00" to each in data.jsx.`
+    );
   }
+
+  posts.sort((a, b) => new Date(b.published) - new Date(a.published));
 
   writeFileSync(join(ROOT, "posts.json"), JSON.stringify(buildPostsJson(posts), null, 2) + "\n", "utf8");
   writeFileSync(join(ROOT, "sitemap.xml"), buildSitemap(posts), "utf8");
