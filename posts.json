@@ -1,5 +1,14 @@
 [
   {
+    "id": "motivation-first-step",
+    "title": "Motivation Doesn't Always Show Up First",
+    "excerpt": "Sometimes you have to take the first step before motivation decides to join you.",
+    "cat": "Self-Care",
+    "image": "assets/posts/motivation-first-step-web.jpg",
+    "published": "2026-07-29T12:00:00-04:00",
+    "modified": "2026-07-29T12:00:00-04:00"
+  },
+  {
     "id": "rapamycin-study",
     "title": "Rapamycin Isn't a Miracle Cure. That's Exactly Why This Study Gives Me Hope.",
     "excerpt": "A new observational study on low-dose rapamycin found measurable biological changes alongside symptom improvement in ME/CFS — and the honesty about its limits is what makes it credible.",

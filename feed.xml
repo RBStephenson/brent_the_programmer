@@ -6,7 +6,18 @@
     <atom:link href="https://brenttheprogrammer.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Miniature painting, self-care, and caregiving notes from the bench.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jul 2026 12:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 12:00:00 -0400</lastBuildDate>
+    <item>
+      <title>Motivation Doesn't Always Show Up First</title>
+      <link>https://brenttheprogrammer.com/?post=motivation-first-step</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=motivation-first-step</guid>
+      <category>Self-Care</category>
+      <pubDate>Wed, 29 Jul 2026 12:00:00 -0400</pubDate>
+      <description><![CDATA[Sometimes you have to take the first step before motivation decides to join you.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/motivation-first-step-web.jpg" type="image/jpeg" length="2205246" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/motivation-first-step-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/motivation-first-step-web.jpg" />
+    </item>
     <item>
       <title>Rapamycin Isn't a Miracle Cure. That's Exactly Why This Study Gives Me Hope.</title>
       <link>https://brenttheprogrammer.com/?post=rapamycin-study</link>

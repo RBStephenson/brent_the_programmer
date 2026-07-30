@@ -41,6 +41,23 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "headline": "Motivation Doesn't Always Show Up First",
+          "url": "https://brenttheprogrammer.com/?post=motivation-first-step",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=motivation-first-step",
+          "datePublished": "2026-07-29",
+          "dateModified": "2026-07-29",
+          "articleSection": "Self-Care",
+          "description": "Sometimes you have to take the first step before motivation decides to join you.",
+          "image": "https://brenttheprogrammer.com/assets/posts/motivation-first-step-web.jpg",
+          "author": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          },
+          "publisher": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          }
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "Rapamycin Isn't a Miracle Cure. That's Exactly Why This Study Gives Me Hope.",
           "url": "https://brenttheprogrammer.com/?post=rapamycin-study",
           "mainEntityOfPage": "https://brenttheprogrammer.com/?post=rapamycin-study",
