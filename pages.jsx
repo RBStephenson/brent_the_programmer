@@ -528,16 +528,30 @@ function ShareMenu({ post, small }) {
   );
 }
 
+function renderEmphasis(text, keyPrefix) {
+  const re = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
+  const parts = [];
+  let last = 0, m, key = 0;
+  while ((m = re.exec(text))) {
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    if (m[1] !== undefined) parts.push(<strong key={`${keyPrefix}-${key++}`}>{m[1]}</strong>);
+    else parts.push(<em key={`${keyPrefix}-${key++}`}>{m[2]}</em>);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts;
+}
+
 function renderInline(text) {
   const re = /\[([^\]]+)\]\(([^)]+)\)/g;
   const parts = [];
   let last = 0, m, key = 0;
   while ((m = re.exec(text))) {
-    if (m.index > last) parts.push(text.slice(last, m.index));
+    if (m.index > last) parts.push(...renderEmphasis(text.slice(last, m.index), `e${key}`));
     parts.push(<a key={key++} href={m[2]} target="_blank" rel="noopener noreferrer">{m[1]}</a>);
     last = m.index + m[0].length;
   }
-  if (last < text.length) parts.push(text.slice(last));
+  if (last < text.length) parts.push(...renderEmphasis(text.slice(last), `e${key}`));
   return parts;
 }
 
