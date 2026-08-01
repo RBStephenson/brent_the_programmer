@@ -6,7 +6,18 @@
     <atom:link href="https://brenttheprogrammer.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Miniature painting, self-care, and caregiving notes from the bench.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2026 12:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 12:00:00 -0400</lastBuildDate>
+    <item>
+      <title>The ME/CFS Research Roundup: July 2026</title>
+      <link>https://brenttheprogrammer.com/?post=me-cfs-research-roundup-july-2026</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=me-cfs-research-roundup-july-2026</guid>
+      <category>ME/CFS</category>
+      <pubDate>Sat, 01 Aug 2026 12:00:00 -0400</pubDate>
+      <description><![CDATA[New clues about cellular energy, major European research investments, and another reminder that rehabilitation is not a cure.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/me-cfs-research-roundup-july-2026-web.jpg" type="image/jpeg" length="1909227" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/me-cfs-research-roundup-july-2026-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/me-cfs-research-roundup-july-2026-web.jpg" />
+    </item>
     <item>
       <title>Motivation Doesn't Always Show Up First</title>
       <link>https://brenttheprogrammer.com/?post=motivation-first-step</link>

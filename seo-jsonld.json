@@ -41,6 +41,23 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "headline": "The ME/CFS Research Roundup: July 2026",
+          "url": "https://brenttheprogrammer.com/?post=me-cfs-research-roundup-july-2026",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=me-cfs-research-roundup-july-2026",
+          "datePublished": "2026-08-01",
+          "dateModified": "2026-08-01",
+          "articleSection": "ME/CFS",
+          "description": "New clues about cellular energy, major European research investments, and another reminder that rehabilitation is not a cure.",
+          "image": "https://brenttheprogrammer.com/assets/posts/me-cfs-research-roundup-july-2026-web.jpg",
+          "author": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          },
+          "publisher": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          }
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "Motivation Doesn't Always Show Up First",
           "url": "https://brenttheprogrammer.com/?post=motivation-first-step",
           "mainEntityOfPage": "https://brenttheprogrammer.com/?post=motivation-first-step",
