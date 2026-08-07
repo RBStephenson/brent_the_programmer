@@ -223,12 +223,13 @@ function buildJsonLd(posts) {
 function updateIndexHtml(jsonLd) {
   const path = join(ROOT, "index.html");
   const html = readFileSync(path, "utf8");
-  const marker = '<script type="application/ld+json">\n';
-  const start = html.indexOf(marker);
+  const openTag = '<script type="application/ld+json">';
+  const start = html.indexOf(openTag);
   if (start === -1) throw new Error("Couldn't find the JSON-LD <script> block in index.html");
-  const bodyStart = start + marker.length;
-  const end = html.indexOf("\n</script>", bodyStart);
-  if (end === -1) throw new Error("Couldn't find the closing </script> for the JSON-LD block");
+  const bodyStart = start + openTag.length + (html.slice(start + openTag.length).match(/^\r?\n/)?.[0].length ?? 0);
+  const closeMatch = html.slice(bodyStart).match(/\r?\n<\/script>/);
+  if (!closeMatch) throw new Error("Couldn't find the closing </script> for the JSON-LD block");
+  const end = bodyStart + closeMatch.index;
   const next = html.slice(0, bodyStart) + JSON.stringify(jsonLd) + html.slice(end);
   writeFileSync(path, next, "utf8");
 }
