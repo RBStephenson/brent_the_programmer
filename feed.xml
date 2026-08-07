@@ -6,7 +6,18 @@
     <atom:link href="https://brenttheprogrammer.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Miniature painting, self-care, and caregiving notes from the bench.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2026 12:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 12:00:00 -0400</lastBuildDate>
+    <item>
+      <title>The Patients Most in Need Are Often the Hardest to Study</title>
+      <link>https://brenttheprogrammer.com/?post=severe-me-awareness-month-2026</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=severe-me-awareness-month-2026</guid>
+      <category>ME/CFS</category>
+      <pubDate>Fri, 07 Aug 2026 12:00:00 -0400</pubDate>
+      <description><![CDATA[Severe ME Awareness Month is a reminder that accessibility in research isn't a nice-to-have — it's part of doing the science correctly.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/severe-me-awareness-month-web.jpg" type="image/jpeg" length="2223560" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/severe-me-awareness-month-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/severe-me-awareness-month-web.jpg" />
+    </item>
     <item>
       <title>The ME/CFS Research Roundup: July 2026</title>
       <link>https://brenttheprogrammer.com/?post=me-cfs-research-roundup-july-2026</link>

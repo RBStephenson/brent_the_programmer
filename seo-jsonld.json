@@ -41,6 +41,23 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "headline": "The Patients Most in Need Are Often the Hardest to Study",
+          "url": "https://brenttheprogrammer.com/?post=severe-me-awareness-month-2026",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=severe-me-awareness-month-2026",
+          "datePublished": "2026-08-07",
+          "dateModified": "2026-08-07",
+          "articleSection": "ME/CFS",
+          "description": "Severe ME Awareness Month is a reminder that accessibility in research isn't a nice-to-have — it's part of doing the science correctly.",
+          "image": "https://brenttheprogrammer.com/assets/posts/severe-me-awareness-month-web.jpg",
+          "author": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          },
+          "publisher": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          }
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "The ME/CFS Research Roundup: July 2026",
           "url": "https://brenttheprogrammer.com/?post=me-cfs-research-roundup-july-2026",
           "mainEntityOfPage": "https://brenttheprogrammer.com/?post=me-cfs-research-roundup-july-2026",
