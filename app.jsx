@@ -3,7 +3,7 @@
 
 function App() {
   const [t, setTweak] = useTweaks(window.TWEAK_DEFAULTS);
-  const [route, setRoute] = React.useState("home");      // home | gallery | blog | post | about | now | contact
+  const [route, setRoute] = React.useState("home");      // home | gallery | studio | blog | post | about | now | awareness | checklist
   const [postId, setPostId] = React.useState(null);
 
   // Apply theme & accent to <html> via data-attrs so CSS variables flip.
@@ -39,7 +39,7 @@ function App() {
   // Deep-linking: open ?post=<id> or ?route=<name> on load, and keep the
   // back/forward buttons working.
   React.useEffect(() => {
-    const VALID = ["home", "gallery", "studio", "blog", "about", "now", "awareness"];
+    const VALID = ["home", "gallery", "studio", "blog", "about", "now", "awareness", "checklist"];
     const sync = () => {
       const params = new URLSearchParams(window.location.search);
       const pid = params.get("post");
@@ -82,6 +82,8 @@ function App() {
                    d: "What's on the desk right now \u2014 the current works in progress." },
       awareness: { t: "ME/CFS Awareness \u2014 brent_the_programmer",
                    d: "What myalgic encephalomyelitis (ME/CFS) is and why it matters \u2014 the disabling illness my wife and son live with." },
+      checklist: { t: "The PEM Crash Conversation Checklist \u2014 brent_the_programmer",
+                   d: "A quick reference for caregivers: is this them talking, or is this PEM? What to say, what not to say, and how to come back from a crash." },
     };
     let meta;
     if (route === "post" && currentPost) {
@@ -136,6 +138,7 @@ function App() {
         {route === "about"   && <AboutPage   go={go} />}
         {route === "now"     && <NowPage />}
         {route === "awareness" && <AwarenessPage go={go} />}
+        {route === "checklist" && <ChecklistPage go={go} />}
       </div>
 
       <SiteFooter go={go} />

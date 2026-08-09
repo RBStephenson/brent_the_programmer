@@ -1231,6 +1231,7 @@ const POSTS = [
       "But before you carry those words with you, take a moment to consider where they came from.",
       "Sometimes the person you love is speaking. And sometimes it's the crash speaking for them.",
       "Knowing the difference can change everything.",
+      "If it helps to have something concrete for the next time this happens, I put together [a short checklist](?route=checklist) with what I've learned to say, and not say, in the moment.",
       "~~signoff",
     ],
     tags: ["caregiving", "me/cfs", "PEM"],

@@ -1,6 +1,6 @@
 // All routes for brent_the_programmer.
 // Globals: HomePage, GalleryPage, BlogPage, PostPage, AboutPage, NowPage,
-// ContactPage.
+// AdoptPage, ChecklistPage.
 
 /* ──────────────────────────────────────────────────────────────────────
    HOME
@@ -1100,6 +1100,112 @@ function AdoptPage({ openLightbox }) {
   );
 }
 
+/* ──────────────────────────────────────────────────────────────────────
+   CHECKLIST — PEM Crash Conversation Checklist (lead magnet)
+   ────────────────────────────────────────────────────────────────────── */
+const PEM_CHECKLIST = [
+  {
+    heading: "Before you respond",
+    items: [
+      "Pause. Don't answer sharp words with sharp words.",
+      "Ask yourself: am I talking to them right now, or am I talking to PEM?",
+      "Remember: PEM can look like anger. It's usually exhaustion wearing anger's clothes.",
+    ],
+  },
+  {
+    heading: "What not to say in the moment",
+    items: [
+      "“You're overreacting.”",
+      "“I was just trying to help.”",
+      "“Why are you being like this?”",
+      "Anything that asks them to explain themselves right now. They can't. That's the crash talking, not them.",
+    ],
+  },
+  {
+    heading: "What to say instead",
+    items: [
+      "“I'm here. We don't have to figure this out right now.”",
+      "“I know this isn't really you.”",
+      "Nothing. Silence is allowed too.",
+    ],
+  },
+  {
+    heading: "After the crash passes",
+    items: [
+      "Let some time pass before revisiting anything that was said.",
+      "If it needs to be talked about, name it gently: “Can we talk about earlier, when you're ready?”",
+      "Remind yourself: PEM was the problem. Not the relationship.",
+    ],
+  },
+  {
+    heading: "For you, the caregiver",
+    items: [
+      "You're allowed to feel hurt, even knowing it was PEM.",
+      "Find one person to say the hard thing to, so it doesn't sit and build up.",
+      "Come back to this list next time. You'll need it again. That's not failure. That's caregiving.",
+    ],
+  },
+];
+
+function ChecklistPage({ go }) {
+  return (
+    <main className="shell" data-screen-label="PEM crash checklist">
+      <section style={{ maxWidth: "42em", margin: "0 auto", padding: "48px 0 8px" }}>
+        <div className="mono smallcaps" style={{ color: "var(--ink-3)" }}>resource · for caregivers</div>
+        <h1 style={{ marginTop: 12 }}>The PEM Crash Conversation Checklist</h1>
+        <p className="lede">
+          A quick reference for the moment it's hard to remember: is this them talking, or is this PEM?
+        </p>
+      </section>
+
+      <section style={{ maxWidth: "42em", margin: "0 auto", padding: "16px 0 40px" }}>
+        {PEM_CHECKLIST.map((group) => (
+          <div key={group.heading} style={{ marginBottom: 32 }}>
+            <h3 style={{ marginBottom: 12 }}>{group.heading}</h3>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 10 }}>
+              {group.items.map((text, i) => (
+                <li key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start", fontSize: 15, lineHeight: 1.5 }}>
+                  <span aria-hidden="true" style={{
+                    flexShrink: 0, width: 18, height: 18, marginTop: 3, borderRadius: 4,
+                    border: "1.5px solid var(--rule)", display: "inline-block",
+                  }} />
+                  <span>{text}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+
+        <blockquote style={{ marginTop: 40, fontStyle: "italic", color: "var(--ink-2)", borderLeft: "2px solid var(--rule)", paddingLeft: 18 }}>
+          This comes from the same place as everything else I write here: trying to
+          take care of the people I love, and trying to take care of myself while I
+          do it.
+        </blockquote>
+
+        <div style={{ marginTop: 40, paddingTop: 24, borderTop: "1px solid var(--rule)" }}>
+          <p className="muted" style={{ fontSize: 13.5, marginBottom: 14 }}>
+            If this was useful, there's more like it. One email a month, workshop
+            notes and caregiving essays, zero promotion.
+          </p>
+          <SubscribeForm
+            formStyle={{ display: "flex", flexWrap: "wrap", gap: 8, maxWidth: 360 }}
+            inputStyle={{
+              flex: 1, padding: "10px 12px", border: "1px solid var(--rule)", borderRadius: 4,
+              background: "var(--paper)", color: "inherit", font: "14px var(--f-body)", outline: "none",
+            }}
+            buttonClassName="btn accent"
+            buttonLabel="Subscribe"
+          />
+          <p style={{ marginTop: 20 }}>
+            <a onClick={() => go("blog")} style={{ cursor: "pointer" }}>&larr; Back to the journal</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  );
+}
+
 Object.assign(window, {
   HomePage, GalleryPage, BlogPage, PostPage, AboutPage, NowPage, AdoptPage,
+  ChecklistPage,
 });
