@@ -1018,7 +1018,7 @@ function AdoptPage({ openLightbox }) {
             A piece is usually adopted within a week — but it's always quieter to subscribers.
           </p>
           <SubscribeForm
-            formStyle={{ marginTop: 18, display: "flex", gap: 8, maxWidth: 360 }}
+            formStyle={{ marginTop: 18, display: "flex", flexWrap: "wrap", gap: 8, maxWidth: 360 }}
             inputStyle={{ flex: 1, padding: "10px 12px", border: "1px solid var(--rule)", borderRadius: 4,
                           background: "var(--paper)", color: "inherit", font: "14px var(--f-body)", outline: "none" }}
             buttonClassName="btn accent"

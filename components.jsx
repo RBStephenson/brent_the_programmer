@@ -1,53 +1,40 @@
 // Shared components for brent_the_programmer.
 // Globals exported: Brand, Nav, SiteHeader, SiteFooter, IconBtn, Placeholder,
-// SocialIcon, Icon, SubscribeForm, subscribeEmail.
+// SocialIcon, Icon, SubscribeForm.
 
-/* ── Subscribe (Buttondown, via /api/subscribe) ────────────────────────── */
-async function subscribeEmail(email) {
-  const res = await fetch("/api/subscribe", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email }),
-  });
-  const data = await res.json().catch(() => ({}));
-  return {
-    ok: res.ok,
-    message: data.message || data.error || (res.ok ? "You're on the list." : "Something went wrong."),
-  };
-}
+/* ── Subscribe (Buttondown embed form — posts straight to Buttondown,
+   no backend/API key needed) ──────────────────────────────────────────── */
+const BUTTONDOWN_USERNAME = "rbrentstephenson";
+
+const srOnly = {
+  position: "absolute", width: 1, height: 1, padding: 0, margin: -1,
+  overflow: "hidden", clip: "rect(0,0,0,0)", whiteSpace: "nowrap", border: 0,
+};
 
 function SubscribeForm({ formStyle, inputStyle, buttonClassName = "btn", buttonStyle, buttonLabel = "ok" }) {
-  const [status, setStatus] = React.useState("idle"); // idle | loading | done
-  const [message, setMessage] = React.useState("");
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const email = e.target.email.value.trim();
-    if (!email) return;
-    setStatus("loading");
-    const result = await subscribeEmail(email);
-    setMessage(result.message);
-    setStatus("done");
-    if (result.ok) e.target.reset();
-  }
-
-  if (status === "done") {
-    return <p className="muted" style={{ fontSize: 13 }}>{message}</p>;
-  }
-
   return (
-    <form onSubmit={handleSubmit} style={formStyle}>
+    <form
+      action={`https://buttondown.com/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`}
+      method="post"
+      className="embeddable-buttondown-form"
+      style={formStyle}
+    >
+      <label htmlFor="bd-email" style={srOnly}>Email</label>
       <input
+        id="bd-email"
         type="email"
         name="email"
         placeholder="you@example.com"
         required
-        disabled={status === "loading"}
         style={inputStyle}
       />
-      <button className={buttonClassName} style={buttonStyle} disabled={status === "loading"}>
-        {status === "loading" ? "…" : buttonLabel}
+      <input type="hidden" name="embed" value="1" />
+      <button className={buttonClassName} style={buttonStyle}>
+        {buttonLabel}
       </button>
+      <p className="muted" style={{ fontSize: 11, marginTop: 6, width: "100%" }}>
+        <a href="https://buttondown.com" target="_blank" rel="noopener noreferrer">Powered by Buttondown.</a>
+      </p>
     </form>
   );
 }
@@ -175,7 +162,7 @@ function SiteFooter({ go }) {
             zero promotion.
           </p>
           <SubscribeForm
-            formStyle={{ display: "flex", gap: 6 }}
+            formStyle={{ display: "flex", flexWrap: "wrap", gap: 6 }}
             inputStyle={{
               flex: 1, padding: "8px 10px", border: "1px solid var(--rule)",
               borderRadius: 4, background: "var(--paper-2)", color: "inherit",
