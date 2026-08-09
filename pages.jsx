@@ -1017,12 +1017,13 @@ function AdoptPage({ openLightbox }) {
             The mailing list gets a heads-up the day before anything lists publicly.
             A piece is usually adopted within a week — but it's always quieter to subscribers.
           </p>
-          <form onSubmit={(e) => { e.preventDefault(); const v = e.target.email.value.trim(); window.location.href = `mailto:brent.stephenson@brenttheprogrammer.com?subject=${encodeURIComponent("Add me to the list")}&body=${encodeURIComponent("Please add me to the heads-up list" + (v ? ": " + v : "") + ".")}`; }} style={{ marginTop: 18, display: "flex", gap: 8, maxWidth: 360 }}>
-            <input type="email" name="email" placeholder="you@example.com"
-                   style={{ flex: 1, padding: "10px 12px", border: "1px solid var(--rule)", borderRadius: 4,
-                            background: "var(--paper)", color: "inherit", font: "14px var(--f-body)", outline: "none" }} />
-            <button className="btn accent">Subscribe</button>
-          </form>
+          <SubscribeForm
+            formStyle={{ marginTop: 18, display: "flex", gap: 8, maxWidth: 360 }}
+            inputStyle={{ flex: 1, padding: "10px 12px", border: "1px solid var(--rule)", borderRadius: 4,
+                          background: "var(--paper)", color: "inherit", font: "14px var(--f-body)", outline: "none" }}
+            buttonClassName="btn accent"
+            buttonLabel="Subscribe"
+          />
         </div>
         <div>
           <div className="num smallcaps muted">or just say hi</div>

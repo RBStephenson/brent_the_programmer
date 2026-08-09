@@ -1,6 +1,56 @@
 // Shared components for brent_the_programmer.
 // Globals exported: Brand, Nav, SiteHeader, SiteFooter, IconBtn, Placeholder,
-// SocialIcon, Icon.
+// SocialIcon, Icon, SubscribeForm, subscribeEmail.
+
+/* ── Subscribe (Buttondown, via /api/subscribe) ────────────────────────── */
+async function subscribeEmail(email) {
+  const res = await fetch("/api/subscribe", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email }),
+  });
+  const data = await res.json().catch(() => ({}));
+  return {
+    ok: res.ok,
+    message: data.message || data.error || (res.ok ? "You're on the list." : "Something went wrong."),
+  };
+}
+
+function SubscribeForm({ formStyle, inputStyle, buttonClassName = "btn", buttonStyle, buttonLabel = "ok" }) {
+  const [status, setStatus] = React.useState("idle"); // idle | loading | done
+  const [message, setMessage] = React.useState("");
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const email = e.target.email.value.trim();
+    if (!email) return;
+    setStatus("loading");
+    const result = await subscribeEmail(email);
+    setMessage(result.message);
+    setStatus("done");
+    if (result.ok) e.target.reset();
+  }
+
+  if (status === "done") {
+    return <p className="muted" style={{ fontSize: 13 }}>{message}</p>;
+  }
+
+  return (
+    <form onSubmit={handleSubmit} style={formStyle}>
+      <input
+        type="email"
+        name="email"
+        placeholder="you@example.com"
+        required
+        disabled={status === "loading"}
+        style={inputStyle}
+      />
+      <button className={buttonClassName} style={buttonStyle} disabled={status === "loading"}>
+        {status === "loading" ? "…" : buttonLabel}
+      </button>
+    </form>
+  );
+}
 
 /* ── Icons (inline SVG, stroke-based) ──────────────────────────────────── */
 function Icon({ name, size = 14 }) {
@@ -124,21 +174,17 @@ function SiteFooter({ go }) {
             One email a month. Workshop notes, the occasional finished mini,
             zero promotion.
           </p>
-          <form onSubmit={(e) => { e.preventDefault(); const v = e.target.email.value.trim(); window.location.href = `mailto:brent.stephenson@brenttheprogrammer.com?subject=${encodeURIComponent("Subscribe me")}&body=${encodeURIComponent("Please add me to the monthly email" + (v ? ": " + v : "") + ".")}`; }} style={{ display: "flex", gap: 6 }}>
-            <input
-              type="email"
-              name="email"
-              placeholder="you@example.com"
-              style={{
-                flex: 1, padding: "8px 10px", border: "1px solid var(--rule)",
-                borderRadius: 4, background: "var(--paper-2)", color: "inherit",
-                font: "13px var(--f-body)", outline: "none"
-              }}
-            />
-            <button className="btn" style={{ padding: "8px 12px" }}>
-              ok
-            </button>
-          </form>
+          <SubscribeForm
+            formStyle={{ display: "flex", gap: 6 }}
+            inputStyle={{
+              flex: 1, padding: "8px 10px", border: "1px solid var(--rule)",
+              borderRadius: 4, background: "var(--paper-2)", color: "inherit",
+              font: "13px var(--f-body)", outline: "none"
+            }}
+            buttonClassName="btn"
+            buttonStyle={{ padding: "8px 12px" }}
+            buttonLabel="ok"
+          />
         </div>
         <div className="footer-signoff" style={{ gridColumn: "1 / -1" }}>
           <span>Trust the process.</span>
