@@ -41,6 +41,23 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "headline": "Advocacy Works: ME/CFS Is Moving From “Optional Knowledge” Toward Standard Medical Education",
+          "url": "https://brenttheprogrammer.com/?post=mecfs-advocacy-works-2026",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=mecfs-advocacy-works-2026",
+          "datePublished": "2026-08-15",
+          "dateModified": "2026-08-15",
+          "articleSection": "ME/CFS",
+          "description": "Advocacy Week 2026 is already producing tangible results in Montana, Virginia, and Iowa — while another fight over the future of federal research funding continues in Washington.",
+          "image": "https://brenttheprogrammer.com/assets/posts/mecfs-advocacy-works-web.jpg",
+          "author": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          },
+          "publisher": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          }
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "STL Studio Hits 1.0",
           "url": "https://brenttheprogrammer.com/?post=stl-studio-1-0",
           "mainEntityOfPage": "https://brenttheprogrammer.com/?post=stl-studio-1-0",

@@ -6,7 +6,18 @@
     <atom:link href="https://brenttheprogrammer.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Miniature painting, self-care, and caregiving notes from the bench.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 12:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 15:00:00 -0400</lastBuildDate>
+    <item>
+      <title>Advocacy Works: ME/CFS Is Moving From “Optional Knowledge” Toward Standard Medical Education</title>
+      <link>https://brenttheprogrammer.com/?post=mecfs-advocacy-works-2026</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=mecfs-advocacy-works-2026</guid>
+      <category>ME/CFS</category>
+      <pubDate>Sat, 15 Aug 2026 15:00:00 -0400</pubDate>
+      <description><![CDATA[Advocacy Week 2026 is already producing tangible results in Montana, Virginia, and Iowa — while another fight over the future of federal research funding continues in Washington.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/mecfs-advocacy-works-web.jpg" type="image/jpeg" length="2131853" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/mecfs-advocacy-works-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/mecfs-advocacy-works-web.jpg" />
+    </item>
     <item>
       <title>STL Studio Hits 1.0</title>
       <link>https://brenttheprogrammer.com/?post=stl-studio-1-0</link>
