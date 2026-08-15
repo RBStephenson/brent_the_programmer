@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://brenttheprogrammer.com/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -36,6 +36,13 @@
     <loc>https://brenttheprogrammer.com/?route=awareness</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://brenttheprogrammer.com/?post=stl-studio-1-0</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://brenttheprogrammer.com/assets/posts/stl-studio-vs-orynt3d-manyfold-web.jpg</image:loc><image:title>STL Studio Hits 1.0</image:title></image:image>
   </url>
   <url>
     <loc>https://brenttheprogrammer.com/?post=severe-me-awareness-month-2026</loc>

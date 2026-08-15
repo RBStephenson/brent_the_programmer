@@ -6,7 +6,18 @@
     <atom:link href="https://brenttheprogrammer.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Miniature painting, self-care, and caregiving notes from the bench.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Aug 2026 12:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 12:00:00 -0400</lastBuildDate>
+    <item>
+      <title>STL Studio Hits 1.0</title>
+      <link>https://brenttheprogrammer.com/?post=stl-studio-1-0</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=stl-studio-1-0</guid>
+      <category>Side Project</category>
+      <pubDate>Sat, 15 Aug 2026 12:00:00 -0400</pubDate>
+      <description><![CDATA[A year of small fixes, weeks of soaking the release, and a version number that finally means something.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/stl-studio-vs-orynt3d-manyfold-web.jpg" type="image/jpeg" length="259756" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/stl-studio-vs-orynt3d-manyfold-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/stl-studio-vs-orynt3d-manyfold-web.jpg" />
+    </item>
     <item>
       <title>The Patients Most in Need Are Often the Hardest to Study</title>
       <link>https://brenttheprogrammer.com/?post=severe-me-awareness-month-2026</link>

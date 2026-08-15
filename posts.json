@@ -1,5 +1,14 @@
 [
   {
+    "id": "stl-studio-1-0",
+    "title": "STL Studio Hits 1.0",
+    "excerpt": "A year of small fixes, weeks of soaking the release, and a version number that finally means something.",
+    "cat": "Side Project",
+    "image": "assets/posts/stl-studio-vs-orynt3d-manyfold-web.jpg",
+    "published": "2026-08-15T12:00:00-04:00",
+    "modified": "2026-08-15T12:00:00-04:00"
+  },
+  {
     "id": "severe-me-awareness-month-2026",
     "title": "The Patients Most in Need Are Often the Hardest to Study",
     "excerpt": "Severe ME Awareness Month is a reminder that accessibility in research isn't a nice-to-have — it's part of doing the science correctly.",

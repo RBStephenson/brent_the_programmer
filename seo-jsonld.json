@@ -41,6 +41,23 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "headline": "STL Studio Hits 1.0",
+          "url": "https://brenttheprogrammer.com/?post=stl-studio-1-0",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=stl-studio-1-0",
+          "datePublished": "2026-08-15",
+          "dateModified": "2026-08-15",
+          "articleSection": "Side Project",
+          "description": "A year of small fixes, weeks of soaking the release, and a version number that finally means something.",
+          "image": "https://brenttheprogrammer.com/assets/posts/stl-studio-vs-orynt3d-manyfold-web.jpg",
+          "author": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          },
+          "publisher": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          }
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "The Patients Most in Need Are Often the Hardest to Study",
           "url": "https://brenttheprogrammer.com/?post=severe-me-awareness-month-2026",
           "mainEntityOfPage": "https://brenttheprogrammer.com/?post=severe-me-awareness-month-2026",
