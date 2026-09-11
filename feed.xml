@@ -6,7 +6,18 @@
     <atom:link href="https://brenttheprogrammer.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Miniature painting, self-care, and caregiving notes from the bench.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 15:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 12:00:00 -0400</lastBuildDate>
+    <item>
+      <title>When the Dishes Start Piling Up</title>
+      <link>https://brenttheprogrammer.com/?post=when-the-dishes-start-piling-up</link>
+      <guid isPermaLink="true">https://brenttheprogrammer.com/?post=when-the-dishes-start-piling-up</guid>
+      <category>Self-Care</category>
+      <pubDate>Fri, 11 Sep 2026 12:00:00 -0400</pubDate>
+      <description><![CDATA[Sometimes taking care of yourself starts with noticing that you're not.]]></description>
+      <enclosure url="https://brenttheprogrammer.com/assets/posts/when-the-dishes-start-piling-up-web.jpg" type="image/jpeg" length="2113410" />
+      <media:content url="https://brenttheprogrammer.com/assets/posts/when-the-dishes-start-piling-up-web.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://brenttheprogrammer.com/assets/posts/when-the-dishes-start-piling-up-web.jpg" />
+    </item>
     <item>
       <title>Advocacy Works: ME/CFS Is Moving From “Optional Knowledge” Toward Standard Medical Education</title>
       <link>https://brenttheprogrammer.com/?post=mecfs-advocacy-works-2026</link>

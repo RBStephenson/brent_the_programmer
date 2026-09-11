@@ -41,6 +41,23 @@
       "blogPost": [
         {
           "@type": "BlogPosting",
+          "headline": "When the Dishes Start Piling Up",
+          "url": "https://brenttheprogrammer.com/?post=when-the-dishes-start-piling-up",
+          "mainEntityOfPage": "https://brenttheprogrammer.com/?post=when-the-dishes-start-piling-up",
+          "datePublished": "2026-09-11",
+          "dateModified": "2026-09-11",
+          "articleSection": "Self-Care",
+          "description": "Sometimes taking care of yourself starts with noticing that you're not.",
+          "image": "https://brenttheprogrammer.com/assets/posts/when-the-dishes-start-piling-up-web.jpg",
+          "author": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          },
+          "publisher": {
+            "@id": "https://brenttheprogrammer.com/#person"
+          }
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "Advocacy Works: ME/CFS Is Moving From “Optional Knowledge” Toward Standard Medical Education",
           "url": "https://brenttheprogrammer.com/?post=mecfs-advocacy-works-2026",
           "mainEntityOfPage": "https://brenttheprogrammer.com/?post=mecfs-advocacy-works-2026",
